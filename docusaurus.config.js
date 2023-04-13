@@ -4,10 +4,15 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// Common data
+const COMMON_DATA = {
+  title: `Wanny's Blog`,
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wan Sim',
-  tagline: 'Web Developer',
+  title: COMMON_DATA.title,
+  tagline: '배우고 느낀 것을 기록하는 공간입니다 💡',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -80,10 +85,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+        disableSwitch: false,
+      },
       navbar: {
-        title: 'Wan Sim',
+        title: COMMON_DATA.title,
         logo: {
-          alt: 'Logo',
+          alt: 'logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -95,12 +104,13 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
           {
-            type: 'localeDropdown',
+            href: 'https://github.com/0420syj/0420syj.github.io',
+            'aria-label': 'GitHub',
+            className: 'header-github-link',
             position: 'right',
           },
         ],
@@ -118,23 +128,6 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -143,7 +136,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/0420syj/0420syj.github.io',
               },
             ],
           },
