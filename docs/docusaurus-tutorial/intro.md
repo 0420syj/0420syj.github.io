@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Docusaurus 블로그 만들기
+# 시작하기
 
 :::info
 
