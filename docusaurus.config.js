@@ -40,8 +40,6 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ko',
-    // TODO : i18n 적용 후 주석 해제
-    // locales: ['ko'],
     locales: ['ko', 'en'],
     path: 'i18n',
     localeConfigs: {
@@ -111,7 +109,6 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          // TODO : i18n 적용 후 주석 해제
           {
             type: 'localeDropdown',
             position: 'right',
