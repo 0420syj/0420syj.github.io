@@ -12,14 +12,14 @@ sidebar_position: 1
 
 지금 보고있는 블로그는 [Docusaurus](https://docusaurus.io)를 이용하여 만들어졌습니다.
 
-Docusaurus는 정적 웹 사이트를 생성하는 도구로, React 및 Markdown을 기반으로 합니다.
+Docusaurus는 Meta에서 만든 오픈소스 정적 웹 사이트를 생성하는 도구로, React 및 Markdown을 기반으로 합니다.
 이 가이드에서는 Docusaurus를 사용하여 나만의 GitHub.io 블로그를 만드는 방법에 대해 설명합니다.
 
 ## 준비 사항
 
-- Node.js (v12 이상)
-- Yarn (선택 사항, npm을 사용해도 괜찮습니다.)
-- GitHub 계정
+- [Node.js](https://nodejs.org/en/download) (v16.14 이상)
+- [Yarn](https://classic.yarnpkg.com/lang/en/) (선택 사항, npm을 사용해도 괜찮습니다.)
+- [GitHub](https://github.com/) 계정
 
 ## 1. Docusaurus 프로젝트 생성하기
 

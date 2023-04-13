@@ -104,12 +104,13 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
           {
-            type: 'localeDropdown',
+            href: 'https://github.com/0420syj/0420syj.github.io',
+            'aria-label': 'GitHub',
+            className: 'header-github-link',
             position: 'right',
           },
         ],
@@ -135,7 +136,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/0420syj/0420syj.github.io',
               },
             ],
           },
