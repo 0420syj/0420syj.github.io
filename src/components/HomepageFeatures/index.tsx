@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Translate, { translate } from "@docusaurus/Translate";
 
 type FeatureItem = {
   title: string;
@@ -10,23 +11,39 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "공부",
+    title: translate({
+      id: "feature-공부",
+      message: "공부",
+      description: "The title of the website",
+    }),
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>새로운 기술을 공부하고, 기존 기술을 더 깊이 이해합니다.</>,
-  },
-  {
-    title: "기록",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
-      <>
-        기록을 하면서 더 깊이 이해하고, 더 나은 개발자가 되기 위해 노력합니다.
-      </>
+      <Translate>
+        새로운 기술을 공부하고, 기존 기술을 더 깊이 이해합니다.
+      </Translate>
     ),
   },
   {
-    title: "공유",
+    title: translate({
+      id: "feature-기록",
+      message: "기록",
+      description: "The title of the website",
+    }),
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    description: (
+      <Translate>
+        기록을 하면서 더 깊이 이해하고, 더 나은 개발자가 되기 위해 노력합니다.
+      </Translate>
+    ),
+  },
+  {
+    title: translate({
+      id: "feature-공유",
+      message: "공유",
+      description: "The title of the website",
+    }),
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: <>공유를 통해 생각과 경험을 나눕니다.</>,
+    description: <Translate>공유를 통해 생각과 경험을 나눕니다.</Translate>,
   },
 ];
 

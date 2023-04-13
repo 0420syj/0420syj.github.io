@@ -1,4 +1,33 @@
 {
+  "title": {
+    "message": "Wanny's Blog",
+    "description": "The website title"
+  },
+  "tagline": {
+    "message": "A place to record what you've learned and felt 💡",
+    "description": "The homepage tagline"
+  },
+  "블로그 📗": {
+    "message": "Blog 📗"
+  },
+  "feature-공부": {
+    "message": "Study"
+  },
+  "feature-기록": {
+    "message": "Record"
+  },
+  "feature-공유": {
+    "message": "Share"
+  },
+  "새로운 기술을 공부하고, 기존 기술을 더 깊이 이해합니다.": {
+    "message": "I study new technologies and deepen my understanding of existing technologies."
+  },
+  "기록을 하면서 더 깊이 이해하고, 더 나은 개발자가 되기 위해 노력합니다.": {
+    "message": "I understand more deeply and strive to become a better developer by recording."
+  },
+  "공유를 통해 생각과 경험을 나눕니다.": {
+    "message": "I share my thoughts and experiences through sharing."
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
