@@ -64,7 +64,7 @@ GitHub 잔디를 심기 위해, GitHub Actions를 사용할 수 있습니다. Gi
 
 더 많은 사람들이 블로그를 만들 수 있도록, Docusaurus 블로그를 만드는 간단한 가이드를 작성해보았습니다.
 
-링크 : [Docusaurus 블로그 만들기](https://0420syj.github.io/docs/category/docusaurus-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+링크 : Docusaurus 블로그 만들기
 
 ## 마치며 🎉
 

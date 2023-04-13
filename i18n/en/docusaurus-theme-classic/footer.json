@@ -1,0 +1,42 @@
+{
+  "link.title.Link": {
+    "message": "Link",
+    "description": "The title of the footer links column with title=Link in the footer"
+  },
+  "link.title.About Docusaurus": {
+    "message": "About Docusaurus",
+    "description": "The title of the footer links column with title=About Docusaurus in the footer"
+  },
+  "link.title.Contact": {
+    "message": "Contact",
+    "description": "The title of the footer links column with title=Contact in the footer"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  },
+  "link.item.label.Homepage": {
+    "message": "Homepage",
+    "description": "The label of footer link with label=Homepage linking to https://docusaurus.io/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/0420syj"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/wansim0420/"
+  },
+  "link.item.label.Email": {
+    "message": "Email",
+    "description": "The label of footer link with label=Email linking to mailto:0420syj@naver.com"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 Wan Sim.Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

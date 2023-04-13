@@ -41,25 +41,25 @@ const config = {
   i18n: {
     defaultLocale: 'ko',
     // TODO : i18n 적용 후 주석 해제
-    locales: ['ko'],
-    // locales: ['ko', 'en'],
-    // path: 'i18n',
-    // localeConfigs: {
-    //   ko: {
-    //     label: '한국어',
-    //     direction: 'ltr',
-    //     htmlLang: 'ko',
-    //     calendar: 'gregory',
-    //     path: 'ko',
-    //   },
-    //   en: {
-    //     label: 'English',
-    //     direction: 'ltr',
-    //     htmlLang: 'en-US',
-    //     calendar: 'gregory',
-    //     path: 'en',
-    //   },
-    // },
+    // locales: ['ko'],
+    locales: ['ko', 'en'],
+    path: 'i18n',
+    localeConfigs: {
+      ko: {
+        label: '한국어',
+        direction: 'ltr',
+        htmlLang: 'ko',
+        calendar: 'gregory',
+        path: 'ko',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+    },
   },
 
   presets: [
@@ -112,10 +112,10 @@ const config = {
             label: 'Tutorial',
           },
           // TODO : i18n 적용 후 주석 해제
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          // },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: `${COMMON_DATA.githubLink}`,
             'aria-label': 'GitHub',
