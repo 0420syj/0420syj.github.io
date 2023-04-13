@@ -12,6 +12,7 @@ __metadata:
     "@docusaurus/core": 2.4.0
     "@docusaurus/module-type-aliases": ^2.4.0
     "@docusaurus/preset-classic": 2.4.0
+    "@docusaurus/types": ^2.4.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.7
     clsx: ^1.2.1
@@ -2143,7 +2144,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/types@npm:2.4.0":
+"@docusaurus/types@npm:2.4.0, @docusaurus/types@npm:^2.4.0":
   version: 2.4.0
   resolution: "@docusaurus/types@npm:2.4.0"
   dependencies:

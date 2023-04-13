@@ -7,12 +7,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // Common data
 const COMMON_DATA = {
   title: `Wanny's Blog`,
+  tagline: '배우고 느낀 것을 기록하는 공간입니다 💡',
+  githubLink: 'https://github.com/0420syj',
+  githubRepoLink: 'https://github.com/0420syj/0420syj.github.io',
+  linkedInLink: 'https://www.linkedin.com/in/wansim0420/',
+  email: '0420syj@naver.com',
+  googleAnalyticsTrackingID: 'G-HWPS68LZ2H',
 };
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: COMMON_DATA.title,
-  tagline: '배우고 느낀 것을 기록하는 공간입니다 💡',
+  tagline: COMMON_DATA.tagline,
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -34,24 +40,26 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-    path: 'i18n',
-    localeConfigs: {
-      ko: {
-        label: '한국어',
-        direction: 'ltr',
-        htmlLang: 'ko',
-        calendar: 'gregory',
-        path: 'ko',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
-    },
+    // TODO : i18n 적용 후 주석 해제
+    locales: ['ko'],
+    // locales: ['ko', 'en'],
+    // path: 'i18n',
+    // localeConfigs: {
+    //   ko: {
+    //     label: '한국어',
+    //     direction: 'ltr',
+    //     htmlLang: 'ko',
+    //     calendar: 'gregory',
+    //     path: 'ko',
+    //   },
+    //   en: {
+    //     label: 'English',
+    //     direction: 'ltr',
+    //     htmlLang: 'en-US',
+    //     calendar: 'gregory',
+    //     path: 'en',
+    //   },
+    // },
   },
 
   presets: [
@@ -61,20 +69,20 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `${COMMON_DATA.githubRepoLink}/tree/master/`,
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          showReadingTime: false,
+          editUrl: `${COMMON_DATA.githubRepoLink}/tree/master/`,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '전체 글 목록',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        googleAnalytics: {
+          trackingID: `${COMMON_DATA.googleAnalyticsTrackingID}`,
+          anonymizeIP: true,
         },
       }),
     ],
@@ -96,19 +104,20 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // TODO : i18n 적용 후 주석 해제
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
           {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/0420syj/0420syj.github.io',
+            href: `${COMMON_DATA.githubLink}`,
             'aria-label': 'GitHub',
             className: 'header-github-link',
             position: 'right',
@@ -119,8 +128,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Link',
             items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
@@ -128,20 +141,38 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'About Docusaurus',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Homepage',
+                href: 'https://docusaurus.io/',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/0420syj/0420syj.github.io',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
+          {
+            title: 'Contact',
+            items: [
+              {
+                label: 'GitHub',
+                href: `${COMMON_DATA.githubLink}`,
+              },
+              {
+                label: 'LinkedIn',
+                href: `${COMMON_DATA.linkedInLink}`,
+              },
+              {
+                label: 'Email',
+                href: `mailto:${COMMON_DATA.email}`,
+              },
+            ],
+
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Wan Sim. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Wan Sim.Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
