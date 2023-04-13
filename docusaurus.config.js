@@ -40,24 +40,26 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-    path: 'i18n',
-    localeConfigs: {
-      ko: {
-        label: '한국어',
-        direction: 'ltr',
-        htmlLang: 'ko',
-        calendar: 'gregory',
-        path: 'ko',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
-    },
+    // TODO : i18n 적용 후 주석 해제
+    locales: ['ko'],
+    // locales: ['ko', 'en'],
+    // path: 'i18n',
+    // localeConfigs: {
+    //   ko: {
+    //     label: '한국어',
+    //     direction: 'ltr',
+    //     htmlLang: 'ko',
+    //     calendar: 'gregory',
+    //     path: 'ko',
+    //   },
+    //   en: {
+    //     label: 'English',
+    //     direction: 'ltr',
+    //     htmlLang: 'en-US',
+    //     calendar: 'gregory',
+    //     path: 'en',
+    //   },
+    // },
   },
 
   presets: [
