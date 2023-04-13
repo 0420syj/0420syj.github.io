@@ -18,4 +18,4 @@ sidebar_position: 1
 
 ## 어떤 **Tutorial**이 있나요?
 
-- [Docusaurus 블로그 만들기](category/docusarus-튜토리얼)
+- [Docusaurus 블로그 만들기](category/docusaurus-블로그-만들기)
