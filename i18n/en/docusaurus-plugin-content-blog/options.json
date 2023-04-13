@@ -8,7 +8,7 @@
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "전체 글 목록",
+    "message": "All posts",
     "description": "The label for the left sidebar"
   }
 }
