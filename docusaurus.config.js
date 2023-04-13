@@ -136,7 +136,7 @@ const config = {
               },
               {
                 label: '튜토리얼',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
             ],
           },

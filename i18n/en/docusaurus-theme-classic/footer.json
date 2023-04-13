@@ -13,7 +13,7 @@
   },
   "link.item.label.튜토리얼": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=튜토리얼 linking to /docs/intro"
+    "description": "The label of footer link with label=튜토리얼 linking to /docs/welcome"
   },
   "link.item.label.홈페이지": {
     "message": "Homepage",
