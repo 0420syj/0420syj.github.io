@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=Email linking to mailto:0420syj@naver.com"
   },
   "copyright": {
-    "message": "Copyright © 2023 Wan Sim.Built with Docusaurus.",
+    "message": "Copyright © 2023 Wan Sim. Built with Docusaurus.",
     "description": "The footer copyright"
   }
 }

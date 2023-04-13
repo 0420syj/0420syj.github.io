@@ -68,12 +68,15 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: `${COMMON_DATA.githubRepoLink}/tree/master/`,
+          editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: false,
           editUrl: `${COMMON_DATA.githubRepoLink}/tree/master/`,
+          editLocalizedFiles: true,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '전체 글 목록',
+
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -102,12 +105,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog', label: '블로그', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '튜토리얼',
           },
           {
             type: 'localeDropdown',
@@ -125,27 +128,27 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Link',
+            title: '링크',
             items: [
               {
-                label: 'Blog',
+                label: '블로그',
                 to: '/blog',
               },
               {
-                label: 'Tutorial',
+                label: '튜토리얼',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'About Docusaurus',
+            title: 'Docusaurus 소개',
             items: [
               {
-                label: 'Homepage',
+                label: '홈페이지',
                 href: 'https://docusaurus.io/',
               },
               {
-                label: 'GitHub',
+                label: '깃허브',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
@@ -154,22 +157,22 @@ const config = {
             title: 'Contact',
             items: [
               {
-                label: 'GitHub',
+                label: '깃허브',
                 href: `${COMMON_DATA.githubLink}`,
               },
               {
-                label: 'LinkedIn',
+                label: '링크드인',
                 href: `${COMMON_DATA.linkedInLink}`,
               },
               {
-                label: 'Email',
+                label: '이메일',
                 href: `mailto:${COMMON_DATA.email}`,
               },
             ],
 
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Wan Sim.Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 심완. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
