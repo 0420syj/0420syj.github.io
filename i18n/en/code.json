@@ -1,4 +1,16 @@
 {
+  "title": {
+    "message": "Wanny's Blog",
+    "description": "The website title"
+  },
+  "tagline": {
+    "message": "A place to record what you've learned and felt 💡",
+    "description": "The homepage tagline"
+  },
+  "블로그 📗": {
+    "message": "Blog 📗"
+  },
+
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
