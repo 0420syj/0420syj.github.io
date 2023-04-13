@@ -136,7 +136,7 @@ const config = {
               },
               {
                 label: '튜토리얼',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
             ],
           },
@@ -176,7 +176,8 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        darkTheme: require('prism-react-renderer/themes/vsDark'),
+        defaultLanguage: 'javascript',
       },
     }),
 };
