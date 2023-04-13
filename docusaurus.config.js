@@ -61,17 +61,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/0420syj/0420syj.github.io/tree/master/',
+          editUrl: 'https://github.com/0420syj/0420syj.github.io/tree/master/',
         },
         blog: {
           showReadingTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/0420syj/0420syj.github.io/tree/master/',
+          editUrl: 'https://github.com/0420syj/0420syj.github.io/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -96,17 +90,18 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          // TODO : i18n 적용 후 주석 해제
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
           {
             href: 'https://github.com/0420syj/0420syj.github.io',
             'aria-label': 'GitHub',
