@@ -1,42 +1,38 @@
 {
-  "link.title.Link": {
+  "link.title.링크": {
     "message": "Link",
-    "description": "The title of the footer links column with title=Link in the footer"
+    "description": "The title of the footer links column with title=링크 in the footer"
   },
-  "link.title.About Docusaurus": {
+  "link.title.Docusaurus 소개": {
     "message": "About Docusaurus",
-    "description": "The title of the footer links column with title=About Docusaurus in the footer"
+    "description": "The title of the footer links column with title=Docusaurus 소개 in the footer"
   },
-  "link.title.Contact": {
-    "message": "Contact",
-    "description": "The title of the footer links column with title=Contact in the footer"
-  },
-  "link.item.label.Blog": {
+  "link.item.label.블로그": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+    "description": "The label of footer link with label=블로그 linking to /blog"
   },
-  "link.item.label.Tutorial": {
+  "link.item.label.튜토리얼": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+    "description": "The label of footer link with label=튜토리얼 linking to /docs/intro"
   },
-  "link.item.label.Homepage": {
+  "link.item.label.홈페이지": {
     "message": "Homepage",
-    "description": "The label of footer link with label=Homepage linking to https://docusaurus.io/"
+    "description": "The label of footer link with label=홈페이지 linking to https://docusaurus.io/"
   },
-  "link.item.label.GitHub": {
+  "link.item.label.깃허브": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/0420syj"
+    "description": "The label of footer link with label=깃허브 linking to https://github.com/0420syj"
   },
-  "link.item.label.LinkedIn": {
+  "link.item.label.링크드인": {
     "message": "LinkedIn",
-    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/wansim0420/"
+    "description": "The label of footer link with label=링크드인 linking to https://www.linkedin.com/in/wansim0420/"
   },
-  "link.item.label.Email": {
+  "link.item.label.이메일": {
     "message": "Email",
-    "description": "The label of footer link with label=Email linking to mailto:0420syj@naver.com"
+    "description": "The label of footer link with label=이메일 linking to mailto:0420syj@naver.com"
   },
   "copyright": {
     "message": "Copyright © 2023 Wan Sim. Built with Docusaurus.",
-    "description": "The footer copyright"
+    "description": "The label of footer link with label=이메일 linking to mailto:0420syj@naver.com"
   }
 }
