@@ -180,6 +180,12 @@ const config = {
         defaultLanguage: 'javascript',
       },
     }),
+
+  customFields: {
+    repoId: process.env.REPO_ID,
+    category: process.env.CATEGORY_NAME,
+    categoryId: process.env.CATEGORY_ID,
+  },
 };
 
 module.exports = config;
