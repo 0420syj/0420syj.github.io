@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Docusaurus 튜토리얼 🦖": {
+    "message": "Docusaurus Tutorial 🦖",
+    "description": "The label for category Docusaurus 튜토리얼 🦖 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.기본 🐤": {
+    "message": "Basic 🐤",
+    "description": "The label for category 기본 🐤 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.심화 🐔": {
+    "message": "Advanced 🐔",
+    "description": "The label for category 심화 🐔 in sidebar tutorialSidebar"
+  }
+}

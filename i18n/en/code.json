@@ -11,13 +11,16 @@
     "message": "Blog 📗"
   },
   "feature-공부": {
-    "message": "Study"
+    "message": "Study",
+    "description": "The title of the website"
   },
   "feature-기록": {
-    "message": "Record"
+    "message": "Record",
+    "description": "The title of the website"
   },
   "feature-공유": {
-    "message": "Share"
+    "message": "Share",
+    "description": "The title of the website"
   },
   "새로운 기술을 공부하고, 기존 기술을 더 깊이 이해합니다.": {
     "message": "I study new technologies and deepen my understanding of existing technologies."
@@ -286,5 +289,17 @@
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
   }
 }
