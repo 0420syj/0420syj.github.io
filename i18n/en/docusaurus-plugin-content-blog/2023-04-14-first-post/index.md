@@ -1,9 +1,9 @@
----.
+---
 slug: first-post
 title: My first encounter with Docusaurus 🦖
 authors: [wannysim]
 tags: [docusaurus, tutorial]
----.
+---
 
 I came across Docusaurus one day, quite by accident.
 
