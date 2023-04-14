@@ -11,7 +11,7 @@ jobs:
   test-deploy:
     name: Test deployment 🚀
     runs-on: ubuntu-latest
-    env:
+    with:
       REPO_ID: { { secrets.REPO_ID } }
       CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
       CATEGORY_ID: { { secrets.CATEGORY_ID } }
