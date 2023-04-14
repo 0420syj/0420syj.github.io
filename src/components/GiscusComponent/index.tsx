@@ -1,30 +1,33 @@
 import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Giscus from "@giscus/react";
 import { useColorMode } from "@docusaurus/theme-common";
 
-interface GiscusComponentProps {
+interface GiscusProps {
   repoId: string;
   category: string;
   categoryId: string;
 }
 
-const GiscusComponent: React.FC<GiscusComponentProps> = () => {
+const GiscusComponent: React.FC = () => {
   const { colorMode } = useColorMode();
 
-  const giscusComponentProps: GiscusComponentProps = {
-    repoId: process.env.REPO_ID,
-    category: process.env.CATEGORY_NAME,
-    categoryId: process.env.CATEGORY_ID,
+  const {
+    siteConfig: {
+      customFields: { repoId, category, categoryId },
+    },
+  } = useDocusaurusContext() as unknown as {
+    siteConfig: { customFields: GiscusProps };
   };
 
   return (
     <Giscus
       repo="0420syj/0420syj.github.io"
-      repoId={giscusComponentProps.repoId}
-      category={giscusComponentProps.category}
-      categoryId={giscusComponentProps.categoryId}
+      repoId={repoId}
+      category={category}
+      categoryId={categoryId}
       mapping="url"
-      term="테스트!"
+      term="Welcome to Wanny's Blog"
       strict="0"
       reactionsEnabled="1"
       emitMetadata="1"
