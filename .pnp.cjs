@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/module-type-aliases", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
             ["@docusaurus/preset-classic", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
             ["@docusaurus/types", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
+            ["@giscus/react", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.2.8"],\
             ["@mdx-js/react", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.7"],\
             ["clsx", "npm:1.2.1"],\
@@ -52,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/module-type-aliases", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
             ["@docusaurus/preset-classic", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
             ["@docusaurus/types", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.4.0"],\
+            ["@giscus/react", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.2.8"],\
             ["@mdx-js/react", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.7"],\
             ["clsx", "npm:1.2.1"],\
@@ -3918,6 +3920,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@giscus/react", [\
+        ["npm:2.2.8", {\
+          "packageLocation": "./.yarn/cache/@giscus-react-npm-2.2.8-046824134a-0e12fa73a3.zip/node_modules/@giscus/react/",\
+          "packageDependencies": [\
+            ["@giscus/react", "npm:2.2.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.2.8", {\
+          "packageLocation": "./.yarn/__virtual__/@giscus-react-virtual-6fbc5f2952/0/cache/@giscus-react-npm-2.2.8-046824134a-0e12fa73a3.zip/node_modules/@giscus/react/",\
+          "packageDependencies": [\
+            ["@giscus/react", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:2.2.8"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["giscus", "npm:1.2.8"],\
+            ["react", "npm:17.0.2"],\
+            ["react-dom", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:17.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@hapi/hoek", [\
         ["npm:9.3.0", {\
           "packageLocation": "./.yarn/cache/@hapi-hoek-npm-9.3.0-447eb8d274-4771c7a776.zip/node_modules/@hapi/hoek/",\
@@ -4035,6 +4064,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@leichtgewicht-ip-codec-npm-2.0.4-dd4d657af8-468de1f04d.zip/node_modules/@leichtgewicht/ip-codec/",\
           "packageDependencies": [\
             ["@leichtgewicht/ip-codec", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lit-labs/ssr-dom-shim", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/@lit-labs-ssr-dom-shim-npm-1.1.0-42d8edcc75-7d6f233141.zip/node_modules/@lit-labs/ssr-dom-shim/",\
+          "packageDependencies": [\
+            ["@lit-labs/ssr-dom-shim", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lit/reactive-element", [\
+        ["npm:1.6.1", {\
+          "packageLocation": "./.yarn/cache/@lit-reactive-element-npm-1.6.1-9b3c9ed19f-fab0bcfdad.zip/node_modules/@lit/reactive-element/",\
+          "packageDependencies": [\
+            ["@lit/reactive-element", "npm:1.6.1"],\
+            ["@lit-labs/ssr-dom-shim", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4930,6 +4978,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/sockjs", "npm:0.3.33"],\
             ["@types/node", "npm:18.15.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/trusted-types", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/@types-trusted-types-npm-2.0.3-225cf76fb4-4794804bc4.zip/node_modules/@types/trusted-types/",\
+          "packageDependencies": [\
+            ["@types/trusted-types", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8199,6 +8256,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["giscus", [\
+        ["npm:1.2.8", {\
+          "packageLocation": "./.yarn/cache/giscus-npm-1.2.8-e07cbb03d5-327fa1af3a.zip/node_modules/giscus/",\
+          "packageDependencies": [\
+            ["giscus", "npm:1.2.8"],\
+            ["lit", "npm:2.7.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["github-slugger", [\
         ["npm:1.5.0", {\
           "packageLocation": "./.yarn/cache/github-slugger-npm-1.5.0-8a3622aa03-c709882245.zip/node_modules/github-slugger/",\
@@ -9603,6 +9670,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-0c37f9f7fa.zip/node_modules/lines-and-columns/",\
           "packageDependencies": [\
             ["lines-and-columns", "npm:1.2.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lit", [\
+        ["npm:2.7.2", {\
+          "packageLocation": "./.yarn/cache/lit-npm-2.7.2-ae92f55f28-e8a53a0044.zip/node_modules/lit/",\
+          "packageDependencies": [\
+            ["lit", "npm:2.7.2"],\
+            ["@lit/reactive-element", "npm:1.6.1"],\
+            ["lit-element", "npm:3.3.1"],\
+            ["lit-html", "npm:2.7.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lit-element", [\
+        ["npm:3.3.1", {\
+          "packageLocation": "./.yarn/cache/lit-element-npm-3.3.1-72f532d27d-c5731de512.zip/node_modules/lit-element/",\
+          "packageDependencies": [\
+            ["lit-element", "npm:3.3.1"],\
+            ["@lit-labs/ssr-dom-shim", "npm:1.1.0"],\
+            ["@lit/reactive-element", "npm:1.6.1"],\
+            ["lit-html", "npm:2.7.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lit-html", [\
+        ["npm:2.7.2", {\
+          "packageLocation": "./.yarn/cache/lit-html-npm-2.7.2-1d376d1adf-885309bd72.zip/node_modules/lit-html/",\
+          "packageDependencies": [\
+            ["lit-html", "npm:2.7.2"],\
+            ["@types/trusted-types", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
