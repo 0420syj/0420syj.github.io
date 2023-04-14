@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
       - name: Test build website 🏗️
-        with:
-          REPO_ID: { { secrets.REPO_ID } }
-          CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
-          CATEGORY_ID: { { secrets.CATEGORY_ID } }
+        env:
+          REPO_ID: ${{ secrets.REPO_ID }}
+          CATEGORY_NAME: ${{ secrets.CATEGORY_NAME }}
+          CATEGORY_ID: ${{ secrets.CATEGORY_ID }}
         run: yarn build

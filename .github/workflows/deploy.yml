@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
       - name: Build website 🏗️
-        with:
-          REPO_ID: { { secrets.REPO_ID } }
-          CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
-          CATEGORY_ID: { { secrets.CATEGORY_ID } }
+        env:
+          REPO_ID: ${{ secrets.REPO_ID }}
+          CATEGORY_NAME: ${{ secrets.CATEGORY_NAME }}
+          CATEGORY_ID: ${{ secrets.CATEGORY_ID }}
         run: yarn build
 
       # Popular action to deploy to GitHub Pages:
