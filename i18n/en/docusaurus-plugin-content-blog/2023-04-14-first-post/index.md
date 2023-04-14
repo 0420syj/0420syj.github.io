@@ -1,71 +1,71 @@
----
+---.
 slug: first-post
-title: Docusaurus와 첫 만남 🦖
+title: My first encounter with Docusaurus 🦖
 authors: [wannysim]
 tags: [docusaurus, tutorial]
----
+---.
 
-어느 날 정말 우연히 Docusaurus를 알게 되었습니다.
+I came across Docusaurus one day, quite by accident.
 
-GitHub.io에 배포된 블로그였는데 정말 예쁘고, 편해보였습니다.
-그리고 그 블로그의 Footer에 적혀있던 단어 `~ Built with Docusaurus.`
+It was a blog on GitHub.io, and it looked really pretty and easy to use.
+And the footer of that blog said `~ Built with Docusaurus.`
 
-## 블로그로써의 Docusaurus 🦖
+## Docusaurus as a blog 🦖
 
-지금까지 사용해본 정적 사이트 생성기는 [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/) 등이 있었는데, Docusaurus가 가장 사용하기 편했습니다.
+I've used static site generators like [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/), but Docusaurus was the easiest to use.
 
-### Docusaurus란? 🤔
+### What is Docusaurus? 🤔
 
-Docusaurus는 Meta에서 만든 오픈소스 프로젝트로, React 기반의 정적 사이트 생성기입니다.
+Docusaurus is an open source project created by Meta, and is a React-based static site generator.
 
-### 장점 🎉
+### Pros 🎉
 
-#### 1. React 기반 📱
+#### 1. Powered by React 📱
 
-React 기반의 정적 사이트 생성기이기 때문에, React를 사용해본 경험이 있다면 빠르게 블로그를 만들 수 있습니다.
+It's a static site generator based on React, so if you have experience with React, you can quickly create a blog.
 
-#### 2. 잘 작성된 가이드 문서 📚
+#### 2. Well-written guide documentation 📚
 
-Meta에서 만든 프로젝트이기 때문에, 가이드 문서가 잘 작성되어있습니다. [Docusaurus 공식 문서](https://docusaurus.io/docs)를 보면서 블로그를 만들 수 있습니다.
+Since it's a project created by Meta, the guide documentation is well written. You can create a blog by looking at the [Docusaurus official documentation](https://docusaurus.io/docs).
 
-#### 3. 편리한 기능들 🛠
+#### 3. Convenient features 🛠
 
-Docusaurus는 블로그를 만들 때 필요한 기능들을 제공합니다. 블로그를 만들 때 필요한 기능들을 제공하기 때문에, 블로그를 만들 때 시간을 절약할 수 있습니다.
+Docusaurus provides the features you need to create a blog. It provides the features you need to create a blog, so you can save time when creating a blog.
 
-#### 4. 커뮤니티 활성화 🤝
+#### 4. Active community 🤝
 
-[Docusaurus 공식 Discord 채널](https://discord.com/invite/docusaurus)에서 질문을 하면 빠르게 답변을 받을 수 있습니다.
+Ask questions on the [Docusaurus official Discord channel](https://discord.com/invite/docusaurus) and get answers quickly.
 
-#### 5. GitHub Pages 호스팅 🚀
+#### 5. Host your GitHub Pages 🚀
 
-GitHub Pages를 호스팅 서버로 사용할 수 있습니다. GitHub Pages를 호스팅 서버로 사용하면, 블로그를 만들고 배포하는 과정을 간단하게 할 수 있습니다.
+You can use GitHub Pages as a hosting server. By using GitHub Pages as your hosting server, you can simplify the process of creating and deploying your blog.
 
-#### 6. 테마 🎨
+#### 6. Themes 🎨
 
-Docusaurus는 기본 테마 외에도 여러 테마를 제공합니다. [Docusaurus 공식 테마](https://docusaurus.io/showcase)를 보면서 블로그를 만들 수 있습니다.
+Docusaurus provides several themes in addition to the default theme. You can create a blog by looking at the [Docusaurus official theme](https://docusaurus.io/showcase).
 
-#### 7. 자연스러운 GitHub 잔디 심기 🌱
+#### 7. Plant a natural GitHub lawn 🌱
 
-GitHub 잔디를 심기 위해, GitHub Actions를 사용할 수 있습니다. GitHub Actions를 사용하면, 자연스럽게 GitHub 잔디를 심을 수 있습니다.
+To plant your GitHub lawn, you can use GitHub Actions. With GitHub Actions, you can plant a natural GitHub lawn.
 
-### 기능 🛠
+### Features 🛠
 
-문서를 만들 때 사용하기 편리한 다양한 기능들을 제공합니다.
+GitHub Actions provides a variety of handy features for creating documentation.
 
-- Markdown 문서 작성
-- 문서 버전 관리
-- 카테고리 및 태그
+- Create Markdown documents
+- Document versioning
+- Categories and tags
 - i18n
-- 검색
+- Search
 
-## Docusaurus로 블로그 만들기 📝
+## Creating a blog with Docusaurus 📝
 
-국내 개발자들이 많이 사용하는 블로그 플랫폼 [Tistory](https://www.tistory.com/), [Velog](https://velog.io/), [Notion](https://www.notion.so/) 등을 사용해보았지만, 블로그를 만들 때 제약사항이 많았습니다.
+I've used [Tistory](https://www.tistory.com/), [Velog](https://velog.io/), and [Notion](https://www.notion.so/), which are popular blogging platforms used by domestic developers, but there were many limitations when creating a blog.
 
-더 많은 사람들이 블로그를 만들 수 있도록, Docusaurus 블로그를 만드는 간단한 가이드를 작성해보았습니다.
+To help more people create blogs, I wrote a simple guide to create a Docusaurus blog.
 
-링크 : 링크 : [Docusaurus 튜토리얼 🦖](https://0420syj.github.io/en/docs/docusaurus-tutorial/intro/)
+Link: [Docusaurus Tutorial 🦖](https://0420syj.github.io/en/docs/docusaurus-tutorial/intro/)
 
-## 마치며 🎉
+## Closing thoughts 🎉
 
-아직 추가하지 못한 기능이 많지만, 앞으로 계속 구현해나가며 Tutorial에 추가할 예정입니다.
+There are a lot of features we haven't added yet, but we'll continue to implement them and add them to the tutorial as we go.

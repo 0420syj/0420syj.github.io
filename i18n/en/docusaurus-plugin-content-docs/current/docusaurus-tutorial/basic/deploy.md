@@ -1,45 +1,45 @@
----
+---.
 sidebar_position: 2
----
+---]
 
-# GitHub Pages에 배포하기
+# Deploy to GitHub Pages
 
 :::info
 
-내용의 일부는 ChatGPT-4를 활용하여 생성되었습니다.
+content was generated utilizing ChatGPT-4.
 
 :::
 
-이제 블로그를 만들었으니, GitHub Pages에 배포해봅시다.
+Now that we've created our blog, let's deploy it to GitHub Pages.
 
-## Repository 생성하기
+## Create a repository
 
-GitHub에 로그인한 후, [New repository](https://github.com/new?repo_name=<username>.github.io) 페이지로 이동합니다.
+After logging in to GitHub, navigate to the [New repository](https://github.com/new?repo_name=<username>.github.io) page.
 
 :::note
 
-`<username>`은 GitHub 계정의 username입니다.  
-반드시 수정해주세요.
+`<username>` is the username of your GitHub account.  
+Please be sure to correct it.
 
 :::
 
-Repository name에 `<username>.github.io`를 입력하고, Create repository 버튼을 눌러 저장소를 생성합니다.
+Enter `<username>.github.io` for the repository name, and press the Create repository button to create the repository.
 
-## Repository 설정하기
+## Setting up the repository
 
-생성한 저장소의 **Settings** 탭으로 이동합니다.
+Go to the **Settings** tab of the created repository.
 
-**Code and automation > Actions > General > Workflow permissions**에서
-**Workflow permissions**을 **Read and write permissions**으로 변경합니다.
+Go to **Code and automation > Actions > General > Workflow permissions**.
+Change **Workflow permissions** to **Read and write permissions**.
 
 ![permissions-setting](./images/permissions-setting.png)
 
-Save 버튼을 눌러 설정을 저장합니다.
+Press the Save button to save the settings.
 
-## 작업내용 커밋하기
+## Committing your work
 
-프로젝트를 푸시합니다.
-`<your-github-username>`은 GitHub 계정의 username입니다.
+Push your project.
+`<your-github-username>` is the username of your GitHub account.
 
 ```bash
 git init
@@ -50,20 +50,20 @@ git remote add origin https://github.com/<your-github-username>/<your-github-use
 git push -u origin main
 ```
 
-이제 프로젝트를 main 브랜치에서 확인할 수 있습니다.
+You can now see your project in the main branch.
 
-## GitHub Actions 설정하기
+## Setting up GitHub Actions
 
-GitHub Actions를 사용하여 프로젝트를 자동으로 배포하도록 설정합니다.
-main 브랜치에 push할 때마다 GitHub Pages에 배포됩니다.
+Set up your project to deploy automatically using GitHub Actions.
+Every time you push to the main branch, it will be deployed to GitHub Pages.
 
-이를 위해 root 디렉토리에 `.github/workflows/` 폴더를 생성하고 `deploy.yml` 파일을 작성합니다.
+To do this, create a `.github/workflows/` folder in your root directory and write a `deploy.yml` file.
 
 ```yaml
 name: Deploy to GitHub Pages
 
 on:
-  push:
+  Push:
     branches:
       - main
     # Review gh actions docs if you want to further define triggers, paths, etc
@@ -102,9 +102,9 @@ jobs:
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 ```
 
-## GitHub Pages에 배포하기
+## Deploy to GitHub Pages
 
-이제 GitHub Actions를 사용하여 GitHub Pages에 배포할 수 있습니다.
+You can now use GitHub Actions to deploy to GitHub Pages.
 
 ```bash
 git add .
@@ -112,6 +112,6 @@ git commit -m "Add GitHub Actions configuration"
 git push
 ```
 
-이 모든 설정을 마치면, 블로그가 `https://<your-github-username>.github.io`에서 접속 가능해집니다. 새로운 블로그 포스트를 작성하려면 my-blog/blog 폴더에 새로운 Markdown 파일을 추가하고, 변경 사항을 저장소에 푸시하면 됩니다.
+Once you've done all of this, your blog will be accessible at `https://<your-github-username>.github.io`. To write a new blog post, simply add a new Markdown file to your my-blog/blog folder and push the changes to your repository.
 
-이제 Docusaurus를 사용하여 GitHub.io 블로그를 성공적으로 만들었습니다! 새로운 포스트를 작성하고 블로그를 성장시키며 공유하세요!
+You have now successfully created a GitHub.io blog using Docusaurus! Start writing new posts, grow your blog, and share it!

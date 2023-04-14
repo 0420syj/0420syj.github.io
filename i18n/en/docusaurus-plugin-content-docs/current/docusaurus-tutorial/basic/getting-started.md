@@ -1,78 +1,78 @@
----
+---.
 sidebar_position: 1
----
+---]
 
-# 시작하기
+# Getting started
 
 :::info
 
-내용의 일부는 ChatGPT-4를 활용하여 생성되었습니다.
+part of the content was generated utilizing ChatGPT-4.
 
 :::
 
-지금 보고있는 블로그는 [Docusaurus](https://docusaurus.io)를 이용하여 만들어졌습니다.
+The blog you are viewing was created utilizing [Docusaurus](https://docusaurus.io).
 
-Docusaurus는 Meta에서 만든 오픈소스 정적 웹 사이트를 생성하는 도구로, React 및 Markdown을 기반으로 합니다.
-이 가이드에서는 Docusaurus를 사용하여 나만의 GitHub.io 블로그를 만드는 방법에 대해 설명합니다.
+Docusaurus is an open-source static website creation tool built on Meta, React, and Markdown.
+In this guide, we'll show you how to create your own GitHub.io blog using Docusaurus.
 
-## 준비 사항
+## Preparation.
 
-- [Node.js](https://nodejs.org/en/download) (v16.14 이상)
-- [Yarn](https://classic.yarnpkg.com/lang/en/) (선택 사항, npm을 사용해도 괜찮습니다.)
-- [GitHub](https://github.com/) 계정
+- [Node.js](https://nodejs.org/en/download) (v16.14 or later)
+- [Yarn](https://classic.yarnpkg.com/lang/en/) (optional, npm is fine to use)
+- [GitHub](https://github.com/) account
 
-## 1. Docusaurus 프로젝트 생성하기
+## 1. Create the Docusaurus project
 
-첫 번째로, 터미널에서 다음 명령어를 실행하여 Docusaurus 프로젝트를 생성합니다.
+First, create a Docusaurus project by running the following command in the terminal.
 
 ```bash
 npx create-docusaurus@latest my-blog classic
 cd my-blog
 ```
 
-`--typescript` 옵션을 사용하여 TypeScript를 사용할 수도 있습니다.
+You can also use TypeScript by using the `--typescript` option.
 
 ```bash
 npx create-docusaurus@latest my-blog classic --typescript
 cd my-blog
 ```
 
-## 2. Docusaurus 프로젝트 구성하기
+## 2. Configure the Docusaurus project
 
-프로젝트 폴더에 있는 docusaurus.config.js 파일을 편집하여 웹 사이트의 메타데이터를 설정합니다.
+Edit the docusaurus.config.js file in your project folder to set up the metadata for your website.
 
 ```javascript
 module.exports = {
-  title: '내 블로그',
-  tagline: 'Docusaurus로 만든 블로그',
+  title: 'My Blog',
+  tagline: 'A blog created with Docusaurus',
   url: 'https://<your-github-username>.github.io',
   baseUrl: '/',
   ...
 };
 ```
 
-## 3. 블로그 포스트 작성하기
+## 3. Write a blog post
 
-`my-blog/blog` 폴더에서 새로운 Markdown 파일을 작성하여 블로그 포스트를 추가할 수 있습니다.
+You can add a blog post by creating a new Markdown file in the `my-blog/blog` folder.
 
-예를 들어, `2023-04-13-my-first-post.md` 파일을 만들고 다음 내용을 추가합니다.
+For example, create a file called `2023-04-13-my-first-post.md` and add the following content.
 
 ```markdown
----
-title: "내 첫번째 포스트"
-author: "홍길동"
+---''
+title: "My first post"
+author: "Hong Gil-dong"
 author_url: "https://github.com/<your-github-username>"
 author_image_url: "https://github.com/<your-github-username>.png"
 tags: [hello, docusaurus]
 date: 2023-04-13
----
+---.
 
-첫 번째 블로그 포스트입니다! Docusaurus를 사용하여 GitHub.io에 블로그를 만들고 있습니다.
+This is my first blog post! I'm using Docusaurus to create a blog on GitHub.io.
 ```
 
-## 4. 블로그 로컬에서 실행하기
+## 4. Run the blog locally
 
-다음 명령어를 실행하여 로컬에서 블로그를 실행하고 브라우저에서 [http://localhost:3000](http://localhost:3000)로 접속할 수 있습니다.
+You can run the blog locally by executing the following command and access [http://localhost:3000] in a browser.
 
 ```bash
 yarn start
