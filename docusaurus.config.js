@@ -117,7 +117,7 @@ const config = {
             position: 'right',
           },
           {
-            href: `${COMMON_DATA.githubLink}`,
+            href: `${COMMON_DATA.githubRepoLink}`,
             'aria-label': 'GitHub',
             className: 'header-github-link',
             position: 'right',

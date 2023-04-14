@@ -2,21 +2,21 @@
 sidebar_position: 1
 ---
 
-# 안녕하세요 👋
+# Hello 👋
 
-## 왜 **"튜토리얼"**이 필요한가요?
+## Why do I need a **"tutorial"**?
 
-처음 프로젝트를 시작할 때, 어떻게 시작해야 할지 모르는 경우가 많습니다.
-이 튜토리얼은 프로젝트를 시작하는 데 도움이 되는 몇 가지 팁을 제공합니다.
+When you first start a project, you often don't know how to get started.
+This tutorial will give you some tips to help you get started with your project.
 
-## 누구를 위한 **"튜토리얼"**인가요?
+## Who is this **"tutorial"** for?
 
-이 튜토리얼은 다음과 같은 사람들을 위해 작성되었습니다.
+This tutorial is written for people who are
 
-- 프로젝트를 처음 시작하는 사람
-- 프로젝트를 시작하기 전에 무엇을 해야 하는지 모르는 사람
-- 예전에 분명히 알고 있었는데 까먹은 사람 `그게 바로 저에요 `
+- People who are starting a project for the first time
+- People who don't know what to do before starting a project
+- Someone who clearly knew it before, but forgot `that's me`
 
-## 어떤 **"튜토리얼"**이 있나요?
+## What **"tutorials"** are there?
 
-- [Docusaurus 블로그 만들기](docusaurus-tutorial/intro)
+- [Creating a Docusaurus blog](docusaurus-tutorial/intro)
