@@ -1,4 +1,4 @@
-name: Test deployment
+name: Test deployment 🚀
 
 on:
   pull_request:
@@ -9,8 +9,12 @@ on:
 
 jobs:
   test-deploy:
-    name: Test deployment
+    name: Test deployment 🚀
     runs-on: ubuntu-latest
+    env:
+      REPO_ID: { { secrets.REPO_ID } }
+      CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
+      CATEGORY_ID: { { secrets.CATEGORY_ID } }
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -18,7 +22,7 @@ jobs:
           node-version: 18
           cache: yarn
 
-      - name: Install dependencies
+      - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
-      - name: Test build website
+      - name: Test build website 🏗️
         run: yarn build

@@ -12,6 +12,7 @@ __metadata:
     "@docusaurus/core": 2.4.0
     "@docusaurus/module-type-aliases": ^2.4.0
     "@docusaurus/preset-classic": 2.4.0
+    "@docusaurus/theme-common": ^2.4.0
     "@docusaurus/types": ^2.4.0
     "@giscus/react": ^2.2.8
     "@mdx-js/react": ^1.6.22
@@ -2081,7 +2082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-common@npm:2.4.0":
+"@docusaurus/theme-common@npm:2.4.0, @docusaurus/theme-common@npm:^2.4.0":
   version: 2.4.0
   resolution: "@docusaurus/theme-common@npm:2.4.0"
   dependencies:
