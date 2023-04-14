@@ -24,7 +24,7 @@ const GiscusComponent: React.FC<GiscusComponentProps> = () => {
       category={giscusComponentProps.category}
       categoryId={giscusComponentProps.categoryId}
       mapping="url"
-      term="Welcome to @giscus/react component!"
+      term="테스트!"
       strict="0"
       reactionsEnabled="1"
       emitMetadata="1"
