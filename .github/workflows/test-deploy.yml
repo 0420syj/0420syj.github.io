@@ -11,10 +11,6 @@ jobs:
   test-deploy:
     name: Test deployment 🚀
     runs-on: ubuntu-latest
-    with:
-      REPO_ID: { { secrets.REPO_ID } }
-      CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
-      CATEGORY_ID: { { secrets.CATEGORY_ID } }
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,4 +21,8 @@ jobs:
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
       - name: Test build website 🏗️
+        with:
+          REPO_ID: { { secrets.REPO_ID } }
+          CATEGORY_NAME: { { secrets.CATEGORY_NAME } }
+          CATEGORY_ID: { { secrets.CATEGORY_ID } }
         run: yarn build
