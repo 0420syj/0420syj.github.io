@@ -3,6 +3,7 @@ slug: first-post
 title: Docusaurus와 첫 만남 🦖
 authors: [wannysim]
 tags: [docusaurus, tutorial]
+enableComments: true
 ---
 
 어느 날 정말 우연히 Docusaurus를 알게 되었습니다.
