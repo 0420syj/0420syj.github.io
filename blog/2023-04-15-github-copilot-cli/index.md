@@ -1,6 +1,7 @@
 ---
 slug: github-copilot-cli
 title: Copilot for CLI 체험기 🤖
+description: GitHub Copilot을 CLI에서 사용할 수 있게 해주는 Copilot for CLI를 체험해보았습니다.
 authors: [wannysim]
 tags: [github-cli, github-copilot-cli, copilot]
 enableComments: true
