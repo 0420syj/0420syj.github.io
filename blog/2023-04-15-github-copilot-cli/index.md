@@ -2,7 +2,7 @@
 slug: github-copilot-cli
 title: Copilot for CLI 체험기 🤖
 authors: [wannysim]
-tags: [github-copilot-cli, copilot]
+tags: [github-cli, github-copilot-cli, copilot]
 enableComments: true
 ---
 
@@ -140,7 +140,7 @@ GitHub CLI 명령 및 쿼리 인터페이스의 강력한 기능과 복잡한 �
 gh-assist "open new issue" # gh? open new issue
 ```
 
-![gh-assist](./images/gh-assist.gif)
+![gh-assist1](./images/gh-assist1.gif)
 
 새로운 이슈를 생성했습니다!
 
@@ -149,6 +149,18 @@ gh-assist "open new issue" # gh? open new issue
 ```bash
 gh-assist "open new pull request" # gh? open new pull request
 ```
+
+추가적으로 아래 4가지 지시사항을 추가하겠습니다.
+
+- title "Copilot for CLI 체험기 🤖"
+- content "Close #27"
+- assign to me
+- label documentation
+
+![gh-assist2](./images/gh-assist2.png)
+![gh-assist3](./images/gh-assist3.png)
+
+그동안 손으로 작성했던 PR을 github cli로 자동으로 생성할 수 있게 되었습니다!
 
 ## 마치며 🎉
 
