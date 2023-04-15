@@ -32,7 +32,7 @@ Repository name에 `<username>.github.io`를 입력하고, Create repository 버
 **Code and automation > Actions > General > Workflow permissions**에서
 **Workflow permissions**을 **Read and write permissions**으로 변경합니다.
 
-![permissions-setting](./images/permissions-setting.png)
+![permissions-setting](./images/permissions-setting.png "permissions-setting")
 
 Save 버튼을 눌러 설정을 저장합니다.
 

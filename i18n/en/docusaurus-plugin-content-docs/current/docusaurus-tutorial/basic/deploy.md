@@ -32,7 +32,7 @@ Go to the **Settings** tab of the created repository.
 Go to **Code and automation > Actions > General > Workflow permissions**.
 Change **Workflow permissions** to **Read and write permissions**.
 
-![permissions-setting](./images/permissions-setting.png)
+![permissions-setting](./images/permissions-setting.png "permissions-setting")
 
 Press the Save button to save the settings.
 
