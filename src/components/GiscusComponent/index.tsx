@@ -34,7 +34,7 @@ const GiscusComponent: React.FC = () => {
       inputPosition="top"
       theme={colorMode}
       lang="en"
-      loading="lazy"
+      loading="eager"
     />
   );
 };

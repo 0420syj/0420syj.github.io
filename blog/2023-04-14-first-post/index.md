@@ -11,6 +11,8 @@ enableComments: true
 GitHub.io에 배포된 블로그였는데 정말 예쁘고, 편해보였습니다.
 그리고 그 블로그의 Footer에 적혀있던 단어 `~ Built with Docusaurus.`
 
+<!-- truncate -->
+
 ## 블로그로써의 Docusaurus 🦖
 
 지금까지 사용해본 정적 사이트 생성기는 [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/) 등이 있었는데, Docusaurus가 가장 사용하기 편했습니다.

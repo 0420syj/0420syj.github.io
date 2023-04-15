@@ -81,7 +81,6 @@ const config = {
           editLocalizedFiles: true,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '전체 글 목록',
-
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
