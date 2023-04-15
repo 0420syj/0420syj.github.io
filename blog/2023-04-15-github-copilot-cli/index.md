@@ -8,6 +8,8 @@ enableComments: true
 
 [GitHub Next](https://githubnext.com/)에서 공개한 Copilot for CLI를 체험해보았습니다.
 
+<!-- truncate -->
+
 :::info
 
 글의 일부는 Copilot에 의해 작성되었습니다.

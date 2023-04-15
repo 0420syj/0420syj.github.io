@@ -11,6 +11,8 @@ I came across Docusaurus one day, quite by accident.
 It was a blog on GitHub.io, and it looked really pretty and easy to use.
 And the footer of that blog said `~ Built with Docusaurus.`
 
+<!-- truncate -->
+
 ## Docusaurus as a blog 🦖
 
 I've used static site generators like [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/), but Docusaurus was the easiest to use.

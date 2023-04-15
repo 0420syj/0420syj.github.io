@@ -8,6 +8,8 @@ enableComments: true
 
 I tried out Copilot for CLI, released by [GitHub Next](https://githubnext.com/).
 
+<!-- truncate -->
+
 :::info
 
 This post is translated by [DeepL](https://www.deepl.com/translator), and corrected by me.
