@@ -152,4 +152,8 @@ gh-assist "open new pull request" # gh? open new pull request
 
 ## 마치며 🎉
 
-아직 추가하지 못한 기능이 많지만, 앞으로 계속 구현해나가며 Tutorial에 추가할 예정입니다.
+우선 생각했던 것보다 이해력이 좋아서 놀랐습니다.
+
+그동안 GUI 환경에 익숙해져서 CLI를 사용할 때는 무언가 불편함이 있었는데, Copilot for CLI를 사용하면서 CLI를 사용하는 데에도 익숙해질 수 있을 것 같습니다.
+
+특히 `gh-assist`는 GitHub CLI를 사용하는 데에도 도움이 될 것 같습니다.
