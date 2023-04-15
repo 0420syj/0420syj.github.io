@@ -1,6 +1,7 @@
 ---
 slug: github-copilot-cli
 title: Copilot for CLI 체험기 🤖
+description: GitHub Copilot을 CLI에서 사용할 수 있게 해주는 Copilot for CLI를 체험해보았습니다.
 authors: [wannysim]
 tags: [github-cli, github-copilot-cli, copilot]
 enableComments: true
@@ -26,7 +27,7 @@ enableComments: true
 
 언제 신청했는지 정확히 기억이 나진 않지만, 1달이 채 지나지 않아 아래 이메일이 도착했습니다!
 
-![email-from-github-next](./images/email-from-github-next.png)
+![email-from-github-next](./images/email-from-github-next.png "email-from-github-next"")
 
 ## Copilot for CLI 설치하기 🛠
 
@@ -48,7 +49,7 @@ github-copilot-cli auth
 
 아래 이미지와 같이 지시사항을 따라서 로그인하면, 인증이 완료됩니다.
 
-![github-copilot-cli-auth](./images/github-copilot-cli-auth.png)
+![github-copilot-cli-auth](./images/github-copilot-cli-auth.png "github-copilot-cli-auth"")
 
 ## Copilot for CLI 사용해보기 🤖
 
@@ -104,7 +105,7 @@ github-copilot-cli what-the-shell "directory tree"
 ?? "directory tree"
 ```
 
-![what-the-shell](./images/what-the-shell.gif)
+![what-the-shell](./images/what-the-shell.gif "what-the-shell"")
 
 ```bash
 tree -R docs blog src
@@ -122,7 +123,7 @@ branch를 삭제해보겠습니다.
 git-assist "delete branch" # git? "delete branch"
 ```
 
-![git-assist](./images/git-assist.gif)
+![git-assist](./images/git-assist.gif "git-assist")
 
 까먹고 안 지운 `feature/giscus` branch를 삭제했습니다 😅
 
@@ -142,7 +143,7 @@ GitHub CLI 명령 및 쿼리 인터페이스의 강력한 기능과 복잡한 �
 gh-assist "open new issue" # gh? open new issue
 ```
 
-![gh-assist1](./images/gh-assist1.gif)
+![gh-assist1](./images/gh-assist1.gif "gh-assist")
 
 새로운 이슈를 생성했습니다!
 
@@ -159,8 +160,8 @@ gh-assist "open new pull request" # gh? open new pull request
 - assign to me
 - label documentation
 
-![gh-assist2](./images/gh-assist2.png)
-![gh-assist3](./images/gh-assist3.png)
+![gh-assist2](./images/gh-assist2.png "gh-assist")
+![gh-assist3](./images/gh-assist3.png "gh-assist")
 
 그동안 손으로 작성했던 PR을 github cli로 자동으로 생성할 수 있게 되었습니다!
 

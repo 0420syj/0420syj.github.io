@@ -1,6 +1,7 @@
 ---
 slug: github-copilot-cli
 title: Copilot for CLI Experience 🤖
+description: I tried out Copilot for CLI, released by GitHub Next.
 authors: [wannysim]
 tags: [github-cli, github-copilot-cli, copilot]
 enableComments: true
@@ -26,7 +27,7 @@ This post is translated by [DeepL](https://www.deepl.com/translator), and correc
 
 I don't remember exactly when I applied, but less than a month later I received the email below!
 
-![email-from-github-next](./images/email-from-github-next.png)
+![email-from-github-next](./images/email-from-github-next.png "email-from-github-next")
 
 ## Installing the Copilot for CLI 🛠
 
@@ -48,7 +49,7 @@ github-copilot-cli auth
 
 Follow the instructions to log in, as shown in the image below, and you'll be authenticated.
 
-![github-copilot-cli-auth](./images/github-copilot-cli-auth.png)
+![github-copilot-cli-auth](./images/github-copilot-cli-auth.png "github-copilot-cli-auth")
 
 ## Trying out Copilot for CLI 🤖
 
@@ -103,7 +104,7 @@ Using the alias you added in [Adding an alias](#adding-an-alias) above, you can 
 ?? "directory tree"
 ```
 
-![what-the-shell](./images/what-the-shell.gif)
+![what-the-shell](./images/what-the-shell.gif "what-the-shell")
 
 ```bash
 tree -R docs blog src
@@ -121,7 +122,7 @@ Let's try to delete a branch.
 git-assist "delete branch" # git? "delete branch"
 ```
 
-![git-assist](./images/git-assist.gif)
+![git-assist](./images/git-assist.gif "git-assist")
 
 I deleted the `feature/giscus` branch that I forgot to delete 😅
 
@@ -141,7 +142,7 @@ Let's create a new issue.
 gh-assist "open new issue" # gh? open new issue
 ```
 
-![gh-assist1](./images/gh-assist1.gif)
+![gh-assist1](./images/gh-assist1.gif "gh-assist")
 
 You've created a new issue!
 
@@ -158,8 +159,8 @@ In addition, we'll add the following four instructions
 - assign to me
 - label documentation
 
-![gh-assist2](./images/gh-assist2.png)
-![gh-assist3](./images/gh-assist3.png)
+![gh-assist2](./images/gh-assist2.png "gh-assist")
+![gh-assist3](./images/gh-assist3.png "gh-assist")
 
 The github cli can now automatically generate PRs that you've been writing by hand!
 
