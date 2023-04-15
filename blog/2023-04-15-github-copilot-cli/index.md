@@ -50,6 +50,12 @@ github-copilot-cli auth
 
 ## Copilot for CLI 사용해보기 🤖
 
+:::note
+
+실행환경 : WSL Ubuntu 22.04
+
+:::
+
 우선 `github-copilot-cli -h`로 명령어를 확인해봅니다.
 
 ```
@@ -82,12 +88,6 @@ eval "$(github-copilot-cli alias -- "$0")"
 
 ### 1. `what-the-shell` (`??`)
 
-:::note
-
-실행환경 : WSL Ubuntu 22.04
-
-:::
-
 `what-the-shell` 명령어를 사용하면, GitHub Copilot을 통해 자연어로 Shell 명령어를 작성할 수 있습니다.
 
 recursive하게 원하는 디렉토리(docs, blog, src)만 tree로 출력하는 명령어를 작성해보겠습니다.
@@ -110,7 +110,45 @@ tree -R docs blog src
 
 원하던 명령어가 나왔습니다! 🎉
 
-### 2. `git-assist` (`?git`)
+### 2. `git-assist` (`git?`)
+
+git 명령어를 자연어로 작성할 수 있습니다.
+
+branch를 삭제해보겠습니다.
+
+```bash
+git-assist "delete branch" # git? "delete branch"
+```
+
+![git-assist](./images/git-assist.gif)
+
+까먹고 안 지운 `feature/giscus` branch를 삭제했습니다 😅
+
+### 3. `gh-assist` (`gh?`)
+
+:::info
+
+GitHub CLI를 사용해보지 않았다면, [GitHub CLI](https://cli.github.com/)를 먼저 설치해주세요. Windows를 제외한 OS에서는 [공식 가이드](https://github.com/cli/cli#installation)를 따라서 설치하시면 됩니다.
+
+:::
+
+GitHub CLI 명령 및 쿼리 인터페이스의 강력한 기능과 복잡한 플래그와 jq 표현식을 대신 생성해줍니다.
+
+새로운 이슈를 생성해보겠습니다.
+
+```bash
+gh-assist "open new issue" # gh? open new issue
+```
+
+![gh-assist](./images/gh-assist.gif)
+
+새로운 이슈를 생성했습니다!
+
+이제 새로운 PR을 생성해보겠습니다.
+
+```bash
+gh-assist "open new pull request" # gh? open new pull request
+```
 
 ## 마치며 🎉
 
