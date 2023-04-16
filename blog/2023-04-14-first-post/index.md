@@ -2,6 +2,7 @@
 slug: first-post
 title: Docusaurus와 첫 만남 🦖
 description: Docusaurus를 알게 되고, 블로그를 만들어보았습니다.
+image: "./images/preview.png"
 authors: [wannysim]
 tags: [docusaurus, tutorial]
 enableComments: true

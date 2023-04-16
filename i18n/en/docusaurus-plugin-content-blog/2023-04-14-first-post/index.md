@@ -2,6 +2,7 @@
 slug: first-post
 title: My first encounter with Docusaurus 🦖
 description: I came across Docusaurus, and created a blog.
+image: "./images/preview.png"
 authors: [wannysim]
 tags: [docusaurus, tutorial]
 enableComments: true
