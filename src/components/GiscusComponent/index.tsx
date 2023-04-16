@@ -9,6 +9,11 @@ interface GiscusProps {
   categoryId: string;
 }
 
+type DocusaurusContextType = {
+  siteConfig: { customFields: GiscusProps };
+  i18n: { currentLocale: string };
+};
+
 const GiscusComponent: React.FC = () => {
   const { colorMode } = useColorMode();
 
@@ -16,24 +21,26 @@ const GiscusComponent: React.FC = () => {
     siteConfig: {
       customFields: { repoId, category, categoryId },
     },
-  } = useDocusaurusContext() as unknown as {
-    siteConfig: { customFields: GiscusProps };
-  };
+    i18n: { currentLocale },
+  } = useDocusaurusContext() as unknown as DocusaurusContextType;
+
+  const repo = "0420syj/0420syj.github.io";
+  const term = "Welcome to Wanny's Blog";
 
   return (
     <Giscus
-      repo="0420syj/0420syj.github.io"
+      repo={repo}
       repoId={repoId}
       category={category}
       categoryId={categoryId}
       mapping="url"
-      term="Welcome to Wanny's Blog"
+      term={term}
       strict="0"
       reactionsEnabled="1"
       emitMetadata="1"
       inputPosition="top"
       theme={colorMode}
-      lang="en"
+      lang={currentLocale}
       loading="eager"
     />
   );
