@@ -16,8 +16,10 @@ const GiscusComponent: React.FC = () => {
     siteConfig: {
       customFields: { repoId, category, categoryId },
     },
+    i18n: { currentLocale },
   } = useDocusaurusContext() as unknown as {
     siteConfig: { customFields: GiscusProps };
+    i18n: { currentLocale: string };
   };
 
   return (
@@ -33,7 +35,7 @@ const GiscusComponent: React.FC = () => {
       emitMetadata="1"
       inputPosition="top"
       theme={colorMode}
-      lang="en"
+      lang={currentLocale}
       loading="eager"
     />
   );
