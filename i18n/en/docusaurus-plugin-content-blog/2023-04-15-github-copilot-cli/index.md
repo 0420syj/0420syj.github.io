@@ -2,6 +2,7 @@
 slug: github-copilot-cli
 title: Copilot for CLI Experience 🤖
 description: I tried out Copilot for CLI, released by GitHub Next.
+image: "./images/preview.png"
 authors: [wannysim]
 tags: [github-cli, github-copilot-cli, copilot]
 enableComments: true
