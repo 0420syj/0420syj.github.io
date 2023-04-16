@@ -76,7 +76,6 @@ const config = {
           editLocalizedFiles: true,
         },
         blog: {
-          showReadingTime: false,
           editUrl: `${COMMON_DATA.githubRepoLink}/tree/master/`,
           editLocalizedFiles: true,
           blogSidebarCount: 'ALL',
