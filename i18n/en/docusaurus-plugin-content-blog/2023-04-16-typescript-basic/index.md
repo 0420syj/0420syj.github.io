@@ -27,14 +27,14 @@ Article is broken down into four parts
 
 ## Basic syntax and types
 
-타입스크립트에는 변수에 타입 어노테이션을 추가하는 데 사용할 수 있는 몇 가지 기본 타입이 있습니다:
+There are a few basic types in Typescript that can be used to add type annotations to variables:
 
-- `number`: 숫자
-- `string`: 텍스트
-- `boolean`: 참 또는 거짓
-- `any`: 모든 유형, 유형을 지정하지 않으려는 경우
+- `number`: number
+- `string`: text
+- `boolean`: true or false
+- `any`: any type, if you don't want to specify a type
 
-다음은 타입스크립트에서 타입 어노테이션을 사용하여 변수를 선언하는 방법의 예시입니다:
+Here's an example of how to declare a variable using a type annotation in Typescript:
 
 ```ts
 let firstName: string = "John";
@@ -44,20 +44,20 @@ let isStudent: boolean = false;
 
 ### array
 
-타입스크립트에서 array은 다음과 같이 작성됩니다:
+In Typescript, an array is written like this
 
 ```ts
 let numbers: number[] = [1, 2, 3];
 let names: string[] = ["John", "Jane", "Bob"];
 
-// 또는
+// Or
 
 let numbers: Array<number> = [1, 2, 3];
 ```
 
 ### tuple
 
-tuple은 고정된 길이의 array입니다. 각 요소는 특정 타입을 가질 수 있습니다.
+A tuple is an array of fixed length, where each element can have a specific type.
 
 ```ts
 let person: [string, number] = ["John", 30];
@@ -65,7 +65,7 @@ let person: [string, number] = ["John", 30];
 
 ### enum
 
-enum은 이름이 있는 상수 집합입니다.
+An enum is a set of constants with names.
 
 ```ts
 enum Color {
@@ -79,7 +79,7 @@ let c: Color = Color.Green;
 
 ### any
 
-any는 모든 유형을 나타냅니다. any는 타입 검사를 건너뛰기 때문에, 타입 안전성을 잃게 됩니다.
+any represents any type. any skips type checking, so you lose type safety.
 
 ```ts
 let notSure: any = 4;
@@ -91,7 +91,7 @@ notSure = false; // okay, definitely a boolean
 
 ### function
 
-타입스크립트에서 function은 다음과 같이 작성됩니다:
+In TypeScript, a function is written like this
 
 ```ts
 function add(a: number, b: number): number {
@@ -101,7 +101,7 @@ function add(a: number, b: number): number {
 
 ### void
 
-void는 반환 값이 없는 함수의 반환 타입입니다.
+void is the return type for functions that have no return value.
 
 ```ts
 function warnUser(): void {
@@ -111,7 +111,7 @@ function warnUser(): void {
 
 ### null과 undefined
 
-null과 undefined는 각각 자신의 타입을 가집니다. 기본적으로 null과 undefined는 모든 타입의 하위 타입입니다.
+Each of null and undefined has its own type. By default, null and undefined are subtypes of all types.
 
 ```ts
 let u: undefined = undefined;
@@ -121,7 +121,7 @@ let n: null = null;
 
 ### never
 
-never는 절대 발생하지 않는 값을 나타냅니다. never는 함수의 반환 타입으로 사용될 수 있습니다.
+never represents a value that will never occur. never can be used as the return type of a function.
 
 ```ts
 function error(message: string): never {
@@ -131,7 +131,7 @@ function error(message: string): never {
 
 ### object
 
-object는 원시 타입을 제외한 모든 타입을 나타냅니다.
+object represents all types except primitive types.
 
 ```ts
 declare function create(o: object | null): void;
@@ -153,31 +153,33 @@ create(undefined); // Error
 
 ### Type Inference
 
-Type Inference는 타입스크립트가 타입을 추론하는 방법입니다. 타입스크립트는 변수의 타입을 지정하지 않으면 변수의 타입을 추론합니다.
+Type inference is how Typescript infers types. If you don't specify the type of a variable, Typescript will infer the type of the variable.
 
 ```ts
-let a = 1 + 2; // a는 number 타입으로 추론됩니다.
+let a = 1 + 2; // a is inferred to be of type number.
 
-let b = [1, null]; // b는 (number | null)[] 타입으로 추론됩니다.
+let b = [1, null]; // b is inferred to be of type (number | null)[].
 
-let c = "abc".substr(1); // c는 string 타입으로 추론됩니다.
+let c = "abc".substr(1); // c is inferred to be of type string.
 ```
 
 ### Type Assertions
 
-Type Assertions는 컴파일러에게 특정 타입으로 타입을 지정하도록 지시합니다. Typescript는 개발자가 타입을 지정하는 것을 허용하지만, 타입을 지정하는 것은 개발자의 책임입니다.
+Type assertions tell the compiler to specify a type as a particular type. Typescript allows developers to specify types, but it is the developer's responsibility to do so.
 
-다시 말해, 컴파일러에게 "내가 시키는 대로 하라"라고 단언(assert)하는 것입니다.
+In other words, you're asserting to the compiler, "Do what I tell you to do."
 
 ```ts
 let someValue: any = "this is a string";
 
-let strLength: number = (someValue as string).length; // as 문법
+let strLength: number = (someValue as string).length; // as syntax
 
-// 또는
+// Or
 
-let strLength: number = (<string>someValue).length; // JSX 문법에서는 사용할 수 없습니다.
+let strLength: number = (<string>someValue).length; // Not available in JSX syntax.
 ```
+
+<!--여기서부터 계속-->
 
 ### Literal Narrowing
 
