@@ -109,7 +109,7 @@ function warnUser(): void {
 }
 ```
 
-### null과 undefined
+### null and undefined
 
 Each of null and undefined has its own type. By default, null and undefined are subtypes of all types.
 
@@ -179,27 +179,25 @@ let strLength: number = (someValue as string).length; // as syntax
 let strLength: number = (<string>someValue).length; // Not available in JSX syntax.
 ```
 
-<!--여기서부터 계속-->
-
 ### Literal Narrowing
 
-Literal Narrowing은 타입스크립트가 리터럴 타입을 축소하는 방법입니다. 리터럴 타입은 타입스크립트에서 특정한 값을 나타내는 타입입니다.
+Literal Narrowing is a way for Typescript to narrow literal types. A literal type is a type that represents a specific value in Typescript.
 
 ```ts
-let x: 10 = 10; // x는 10이라는 리터럴 타입을 가집니다.
+let x: 10 = 10; // x has a literal type of 10.
 ```
 
 ### Union Types
 
-Union Types는 타입스크립트가 여러 타입을 하나의 타입으로 합치는 방법입니다.
+Union Types is a way for Typescript to combine multiple types into a single type.
 
 ```ts
-let x: number | string = 10; // x는 number 또는 string 타입을 가집니다.
+let x: number | string = 10; // x has the type number or string.
 ```
 
 ### Type Guards
 
-Type Guards는 타입스크립트가 타입을 확인하는 방법입니다. 타입을 확인하는 방법은 두 가지가 있습니다.
+Type guards are a way for TypeScript to check types. There are two ways to check types
 
 - typeof
 - instanceof
@@ -228,27 +226,27 @@ function padLeft(value: string, padding: string | number) {
 
 ### Type Compatibility
 
-Type Compatibility는 타입스크립트가 타입을 호환되는지 확인하는 방법입니다. 타입 호환성은 구조적 타이핑(structural typing)을 기반으로 합니다. 구조적 타이핑은 타입이 구조적으로 같으면 호환된다는 것을 의미합니다.
+Type compatibility is a way for Typescript to ensure that types are compatible. Type compatibility is based on structural typing. Structural typing means that types are compatible if they are structurally equivalent.
 
 ```ts
 interface Named {
-  name: string; // name 프로퍼티가 있어야 합니다.
+  name: string; // It must have a name property.
 }
 
 class Person {
-  name: string; // name 프로퍼티가 있어야 합니다.
+  name: string; // It must have a name property.
 }
 
 let p: Named;
 
-// 구조적 타이핑이 string 타입을 가진 name 프로퍼티를 가지고 있기 때문에 호환됩니다.
+// Structured typing is compatible because it has a name property with a string type.
 
 p = new Person();
 ```
 
 ### Type Aliases
 
-Type Aliases는 타입을 새로운 이름으로 정의하는 방법입니다.
+Type Aliases are a way to define a type with a new name.
 
 ```ts
 type Name = string;
@@ -270,7 +268,7 @@ function getName(n: NameOrResolver): Name {
 
 ### Interface
 
-Interface는 객체의 모양을 정의하여 특정 요구 사항을 충족하도록 하는 데 사용됩니다.
+Interfaces are used to define the appearance of an object so that it meets specific requirements.
 
 ```ts
 interface User {
@@ -288,7 +286,7 @@ const user: User = {
 
 ### Class
 
-Class는 특정 구조와 동작을 가진 객체를 만드는 데 사용됩니다.
+Classes are used to create objects with specific structure and behavior.
 
 ```ts
 class Animal {
@@ -304,14 +302,14 @@ class Animal {
 }
 
 const dog = new Animal("Buddy");
-dog.speak(); // 출력 : My name is Buddy
+dog.speak(); // Output : My name is Buddy
 ```
 
 ## Module and Namespace
 
 ### Module
 
-Module은 코드를 구성하고 캡슐화하는 데 도움이 됩니다. Module은 변수, 함수, 클래스 등을 포함할 수 있습니다.
+Modules help you organize and encapsulate your code. Modules can contain variables, functions, classes, and more.
 
 ```ts title="math.ts"
 export function add(a: number, b: number): number {
@@ -329,13 +327,13 @@ export function subtract(a: number, b: number): number {
 import { add } from "./math";
 import { subtract } from "./subtraction";
 
-console.log(add(1, 2)); // 출력 : 3
-console.log(subtract(5, 3)); // 출력 : 2
+console.log(add(1, 2)); // Output : 3
+console.log(subtract(5, 3)); // Output : 2
 ```
 
 ### Namespace
 
-Namespace는 코드를 구성하는 또 다른 방법입니다. Namespace는 이름 충돌을 방지하고 관련 기능을 함께 그룹화하는 데 도움이 됩니다:
+Namespaces are another way to organize your code. Namespaces help you avoid name conflicts and group related functions together:
 
 ```typescript
 namespace Geometry {
