@@ -5,7 +5,19 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: yarn install && yarn run build
-    command: yarn run start
-
-
+  - name : Install & Build 📦
+    init : yarn install && yarn run build
+  - name : Install GitHub CLI 🛠️
+    init: |
+      type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+      curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+      && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+      && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+      && sudo apt update \
+      && sudo apt install gh -y
+    command : gh auth login
+  - name : Install Copilor for CLI 🛠️
+    init: |
+      npm install -g @githubnext/github-copilot-cli
+      eval "$(github-copilot-cli alias -- "$0")"
+    command : github-copilot-cli auth

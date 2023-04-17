@@ -1,31 +1,31 @@
 ---
 slug: typescript-basic
-title: TypeScript 기초🐤
-description: TypeScript의 기초적인 내용을 정리해보았습니다.
+title: TypeScript Basic🐤
+description: I've summarized the basics of TypeScript.
 image: "./images/preview.png"
 authors: [wannysim]
 tags: [typescript]
 enableComments: true
 ---
 
-TypeScript의 기초적인 내용을 정리해보았습니다.
+I've summarized the basics of TypeScript.
 
 <!-- truncate -->
 
-## Typescript 소개
+## Introduction to Typescript
 
-Typescript는 Javascript의 superset으로, 정적 type을 추가하여 Javascript의 기능을 확장합니다. Typescript는 기존 Javascript 코드와 호환되면서도 대규모 애플리케이션을 더 쉽게 작성하고 유지보수할 수 있도록 설계되었습니다.
+Typescript is a superset of Javascript that extends the functionality of Javascript by adding static types. Typescript is designed to be compatible with existing Javascript code while making it easier to write and maintain large applications.
 
-## 목차
+## Table of Contents
 
-크게 4가지로 나누어 정리해보았습니다.
+Article is broken down into four parts
 
-- [기본 문법과 유형](#기본-문법과-유형)
-- [Typescript 개념](#typesciprt-개념)
-- [Interface와 Class](#interface와-class)
-- [Module과 Namespace](#module과-namespace)
+- [Basic syntax and types](#basic-syntax-and-types)
+- [Concepts in Typescript](#concepts-in-typescript)
+- [Interface and Class](#interface-and-class)
+- [Module and Namespace](#module-and-namespace)
 
-## 기본 문법과 유형
+## Basic syntax and types
 
 타입스크립트에는 변수에 타입 어노테이션을 추가하는 데 사용할 수 있는 몇 가지 기본 타입이 있습니다:
 
@@ -149,7 +149,7 @@ create(false); // Error
 create(undefined); // Error
 ```
 
-## Typesciprt 개념
+## Concepts in Typescript
 
 ### Type Inference
 
@@ -264,7 +264,7 @@ function getName(n: NameOrResolver): Name {
 }
 ```
 
-## Interface와 Class
+## Interface and Class
 
 ### Interface
 
@@ -305,7 +305,7 @@ const dog = new Animal("Buddy");
 dog.speak(); // 출력 : My name is Buddy
 ```
 
-## Module과 Namespace
+## Module and Namespace
 
 ### Module
 
