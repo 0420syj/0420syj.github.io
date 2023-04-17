@@ -1,9 +1,27 @@
 # Wanny's Blog
 
-## About
+## 소개
 
-이 웹사이트는 [Docusaurus 2](https://docusaurus.io/)로 만들어졌습니다.
+이 블로그는 [Docusaurus](https://docusaurus.io/)를 사용하여 만들어졌습니다.
 
-## Tutorial
+## 설치
 
-직접 만들어보고 싶다면 [Docusaurus 시작하기](https://0420syj.github.io/docs/docusaurus-tutorial/intro)를 참고하세요.
+```bash
+yarn install
+```
+
+## 로컬 서버 실행
+
+```bash
+yarn start
+```
+
+## 빌드
+
+```bash
+yarn build
+```
+
+## 간단한 튜토리얼
+
+[공식 문서](https://docusaurus.io/docs/category/getting-started)나 제가 작성한 [튜토리얼](https://0420syj.github.io/docs/docusaurus-tutorial/intro/)을 참고해주세요.
