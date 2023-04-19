@@ -267,16 +267,21 @@ class Robot implements Worker {
 
 리팩토링된 `good.ts`는 `Worker` 인터페이스를 `Worker`와 `Eater`라는 두 개의 인터페이스로 분리합니다. 이제 `Robot` 클래스는 `Worker` 인터페이스만 구현하면 되고, `Human` 클래스는 `Worker`와 `Eater` 인터페이스를 모두 구현합니다. 이는 클라이언트가 더 이상 사용하지 않는 메서드에 의존하지 않아도 되므로 ISP를 준수합니다.
 
-<!--여기부터 계속-->
-
 ## 5. 의존성 역전 원칙(DIP) 🔀
 
-High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+고수준 모듈은 저수준 모듈에 의존해서는 안 됩니다. 둘 다 추상화에 의존해야 합니다. 추상화는 저수준에 의존해서는 안 되고, 저수준은 추상화에 의존해야 합니다.
+
+:::info 용어 설명
+
+- 고수준 모듈 : 인터페이스와 같은 객체의 상위 수준에 위치하는 추상적인 모듈
+- 저수준 모듈 : 구체적인 구현을 포함하는 모듈
+
+:::
 
 ### 예시
 
-```ts
-// Bad: High-level module depends on the low-level module directly
+```ts title="bad.ts"
+// Bad: 고수준 모듈(ContentProcessor)이 저수준 모듈(FileReader)에 의존합니다. (DIP 위반)
 class FileReader {
   read(): string {
     // Read from a file
@@ -290,8 +295,10 @@ class ContentProcessor {
     console.log("Processing:", content);
   }
 }
+```
 
-// Good: Both high-level and low-level modules depend on abstractions
+```ts title="good.ts"
+// Good: 고수준 모듈(ContentProcessor)이 저수준 모듈(FileReader)에 의존하지 않습니다. (DIP 준수)
 interface IReader {
   read(): string;
 }
@@ -313,17 +320,12 @@ class ContentProcessor {
 
 ### 설명
 
-In this example, the ContentProcessor class no longer depends on the concrete FileReader class. Instead, both the high-level ContentProcessor and low-level FileReader modules depend on the IReader interface abstraction. This makes the system more flexible and easier to maintain, as new reader implementations can be easily introduced without changing the ContentProcessor class.
+`bad.ts`에서 `ContentProcessor` 클래스는 `FileReader` 클래스에 의존합니다. 이는 고수준 모듈이 저수준 모듈에 의존하므로 DIP를 위반합니다.
+
+리팩토링된 `good.ts`에서는 `IReader` 인터페이스를 정의하고, `FileReader` 클래스는 이 인터페이스를 구현합니다. 이제 `ContentProcessor` 클래스는 `IReader` 인터페이스에 의존하므로 DIP를 준수합니다.
 
 ## 마치며 🏁
 
-In conclusion, the SOLID principles are essential guidelines for designing maintainable, scalable, and flexible software systems. By adhering to these principles, developers can improve code quality and create a foundation for future growth and adaptability.
+SOLID 원칙은 객체지향 프로그래밍에서 가장 중요한 원칙입니다. 이 원칙을 잘 지키면 코드의 유지보수성이 높아지고, 코드의 재사용성이 높아지며, 코드의 확장성이 높아집니다.
 
-To recap, the SOLID principles are:
-
-Single Responsibility Principle (SRP): A class should have only one reason to change, meaning it should have only one responsibility.
-Open/Closed Principle (OCP): Software entities should be open for extension but closed for modification.
-Liskov Substitution Principle (LSP): Derived classes must be substitutable for their base classes.
-Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
-Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions.
-By understanding and applying the SOLID principles in your TypeScript projects, you can create code that is easier to read, understand, and maintain. These principles enable you to develop software that is more resilient to changes and can be extended effortlessly when new requirements emerge. Keep these principles in mind when designing and implementing software systems, and you'll be well on your way to creating robust and efficient applications.
+저도 여전히 SOLID 원칙을 잘 지키지 못하는 경우가 많습니다. 이 글을 쓰면서도 많이 반성하게 되었습니다. 앞으로 결합도와 응집도에 대해 항상 고민하고, SOLID 원칙을 떠올리며 코드를 작성해야겠습니다!
