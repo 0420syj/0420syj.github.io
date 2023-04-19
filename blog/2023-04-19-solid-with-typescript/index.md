@@ -40,6 +40,8 @@ Typesciprt를 통해 SOLID 원칙에 대해 정리해보았습니다.
 
 SOLID 원칙을 따르면 결합도는 낮고 응집도는 높은 아키텍처를 만들 수 있으며, 그 결과 유지보수와 확장이 쉽고, 유연한 시스템을 구축할 수 있습니다. 이러한 특성은 변화하는 요구사항에 쉽게 적응하고 유지보수 비용을 절감하며 전반적인 코드 품질을 개선할 수 있으므로 소프트웨어 개발에 필수적입니다.
 
+<!--여기부터 이어서 작성-->
+
 ## 1. 단일 책임 원칙(SRP) 🧩
 
 A class should have only one reason to change, meaning it should have only one responsibility.
