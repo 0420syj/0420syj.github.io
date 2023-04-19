@@ -14,9 +14,9 @@ const COMMON_DATA = {
   email: '0420syj@naver.com',
   googleAnalyticsTrackingID: 'G-HWPS68LZ2H',
   algolia: {
-    appId: 'CW4QPCEAXT',
-    apiKey: 'ea112991d3f1c6422e2d1ea1787b51d9',
-    indexName: `Wanny's Blog`,
+    appId: 'AZOQYC8R4V',
+    apiKey: '79ee993e9201fa24d7434de5983ea99b',
+    indexName: `0420syjio`,
   },
 };
 
