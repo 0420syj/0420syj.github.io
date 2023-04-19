@@ -44,12 +44,12 @@ SOLID 원칙을 따르면 결합도는 낮고 응집도는 높은 아키텍처�
 
 ## 1. 단일 책임 원칙(SRP) 🧩
 
-A class should have only one reason to change, meaning it should have only one responsibility.
+클래스는 변경할 이유가 하나만 있어야 하며, 이는 책임이 하나만 있어야 한다는 의미입니다.
 
 ### 예시
 
-```ts
-// Bad: A single class handling user data and saving it to a database
+```ts title="bad.ts"
+// Bad: 사용자 데이터를 처리하고 데이터베이스에 저장하는 단일 클래스
 class User {
   name: string;
   email: string;
@@ -60,11 +60,13 @@ class User {
   }
 
   saveToDatabase() {
-    // Code to save user data to a database
+    // 사용자 데이터를 DB에 저장하는 코드
   }
 }
+```
 
-// Good: Separating responsibilities into different classes
+```ts title="good.ts"
+// Good: 여러 클래스로 책임 분리
 class User {
   name: string;
   email: string;
@@ -77,34 +79,36 @@ class User {
 
 class UserRepository {
   save(user: User) {
-    // Code to save user data to a database
+    // 사용자 데이터를 DB에 저장하는 코드
   }
 }
 ```
 
 ### 설명
 
-In this example, the User class initially has two responsibilities: managing user data and saving it to a database. This violates SRP, so the responsibilities are separated into two different classes, User and UserRepository. Now, each class has only one responsibility, making it easier to maintain and understand.
+이 예시에서 `bad.ts`의 `User` 클래스는 **사용자 데이터 관리**와 **DB 저장**이라는 2가지 책임을 갖습니다. 이는 SRP를 위반하는 것이므로 이 2가지 책임은 `User`와 `UserRepository`라는 2개의 다른 클래스로 분리됩니다. 이제 각 클래스는 하나의 책임만 가지므로 유지보수와 가독성이 향상됩니다.
 
 ## 2. 개방/폐쇄 원칙(OCP)🚪
 
-Software entities should be open for extension but closed for modification.
+소프트웨어 요소는 확장에는 열려 있어야 하고, 변경에는 닫혀 있어야 합니다.
 
 ### 예시
 
-```ts
-// Bad: Modifying the existing class to add new shapes
+```ts title="bad.ts"
+// Bad: 기존 클래스를 수정하여 새 도형 추가
 class AreaCalculator {
-  calculateArea(shape: 'circle' | 'square', size: number) {
-    if (shape === 'circle') {
+  calculateArea(shape: "circle" | "square", size: number) {
+    if (shape === "circle") {
       return Math.PI * size * size;
-    } else if (shape === 'square') {
+    } else if (shape === "square") {
       return size * size;
     }
   }
 }
+```
 
-// Good: Using abstraction and inheritance to extend functionality
+```ts title="good.ts"
+// Good: 추상화 및 상속을 사용하여 기능 확장
 abstract class Shape {
   abstract calculateArea(): number;
 }
@@ -144,18 +148,20 @@ class AreaCalculator {
 
 ### 설명
 
-Initially, the AreaCalculator class calculates the area of different shapes using if-else statements. To add a new shape, you have to modify the existing class, which violates OCP. The refactored code uses an abstract Shape class with an abstract calculateArea method. The Circle and Square classes inherit from Shape, implementing their own calculateArea methods. Now, to add a new shape, you can create a new class that extends Shape without modifying the AreaCalculator class.
+`bad.ts`의 `AreaCalculator` 클래스는 if-else문을 사용하여 여러 도형의 면적을 계산합니다. 새 도형을 추가하려면 기존 클래스를 수정해야 하는데, 이는 OCP를 위반하는 것입니다.
+
+리팩토링된 `good.ts`는 추상화 된 `calculateArea()`가 있는 추상화 된 `Shape` 클래스를 사용합니다. `Circle` 및 `Square` 클래스는 `Shape`에서 상속되어, `calculateArea()`를 구현합니다. 이제 새 도형을 추가하더라도 `AreaCalculator` 클래스를 수정하지 않고, `Shape`를 확장하는 새 클래스를 만들 수 있습니다.
 
 ## 3. 리스코프 치환 원칙(LSP) 🔄
 
-Derived classes must be substitutable for their base classes.
+상위 타입의 객체를 하위 타입의 객체로 치환해도, 상위 타입을 사용하는 프로그램은 정상적으로 동작해야 한다.
 
 ### 예시
 
-```ts
+```ts title="bad.ts"
 class Bird {
   fly(): void {
-    console.log('I can fly');
+    console.log("I can fly");
   }
 }
 
@@ -167,16 +173,18 @@ class Ostrich extends Bird {
   }
 }
 
-// Bad: Ostrich can't be used as a substitute for Bird
+// Bad: Ostrich는 Bird의 하위 타입이 될 수 없습니다.
 const bird: Bird = new Ostrich();
 bird.fly(); // Throws an error
+```
 
-// Good: Separating the behaviors into different classes
+```ts title="good.ts"
+// Good: 동작에 따라 여러 클래스로 분리
 class Bird {}
 
 class FlyingBird extends Bird {
   fly(): void {
-    console.log('I can fly');
+    console.log("I can fly");
   }
 }
 
@@ -188,22 +196,46 @@ class Ostrich extends NonFlyingBird {}
 
 ### 설명
 
-In the first example, the Ostrich class extends Bird, which has a fly method. However, an ostrich cannot fly, so the LSP is violated. The refactored code separates the Bird class into FlyingBird and NonFlyingBird. Now, the Ostrich class extends NonFlyingBird, and the LSP is preserved since both Pigeon and Ostrich can be used as substitutes for their respective base classes without causing issues.
+`bad.ts`에서 `Ostrich` 클래스는 `fly()`가 있는 `Bird`를 상속합니다. 그러나 `Ostrich`는 날 수 없으므로 LSP를 위반합니다.
+
+리팩토링된 `good.ts`는 `Bird` 클래스를 `FlyingBird`와 `NonFlyingBird`로 분리합니다. 이제 `Ostrich` 클래스는 `Pigeon` 클래스를 확장하고, `Pigeon`와 `Ostrich` 모두 문제를 일으키지 않고 각각의 기본 클래스를 대체할 수 있으므로 LSP가 유지됩니다.
 
 ## 4. 인터페이스 분리 원칙(ISP) ➗
 
-Clients should not be forced to depend on interfaces they do not use.
+인터페이스는 클라이언트에게 필요한 것만 제공해야 합니다. 즉, 클라이언트는 자신이 사용하는 메서드에만 의존해야 합니다.
 
 ### 예시
 
-```ts
-// Bad: A single interface with multiple responsibilities
+```ts {22-24} title="bad.ts"
+// Bad: 여러 책임을 하나의 인터페이스에 포함
 interface Worker {
   work(): void;
   eat(): void;
 }
 
-// Good: Separating the responsibilities into different interfaces
+class Human implements Worker {
+  work(): void {
+    console.log("I am working");
+  }
+
+  eat(): void {
+    console.log("I am eating");
+  }
+}
+
+class Robot implements Worker {
+  work(): void {
+    console.log("I am working");
+  }
+
+  eat(): void {
+    throw new Error("I can't eat");
+  }
+}
+```
+
+```ts title="good.ts"
+// Good: 서로 다른 인터페이스로 책임 분리
 interface Worker {
   work(): void;
 }
@@ -214,32 +246,28 @@ interface Eater {
 
 class Human implements Worker, Eater {
   work(): void {
-    console.log('I am working');
+    console.log("I am working");
   }
 
   eat(): void {
-    console.log('I am eating');
+    console.log("I am eating");
   }
 }
 
 class Robot implements Worker {
   work(): void {
-    console.log('I am working');
+    console.log("I am working");
   }
 }
-
-// Usage
-const human = new Human();
-human.work();
-human.eat();
-
-const robot = new Robot();
-robot.work();
 ```
 
 ### 설명
 
-Initially, the Worker interface contains both work and eat methods. This forces the Robot class to implement the eat method, which it doesn't need. The refactored code separates the Worker interface into two interfaces, Worker and Eater. Now, the Robot class only needs to implement the Worker interface, and the Human class implements both the Worker and Eater interfaces. This adheres to the ISP, as clients are no longer forced to depend on methods they don't use.
+`bat.ts`의 `Worker` 인터페이스는 `work()`와 `eat()`를 둘 다 포함하고 있습니다. 이로 인해 `Robot` 클래스는 필요하지 않은 `eat()`을 강제로 구현해야 합니다.
+
+리팩토링된 `good.ts`는 `Worker` 인터페이스를 `Worker`와 `Eater`라는 두 개의 인터페이스로 분리합니다. 이제 `Robot` 클래스는 `Worker` 인터페이스만 구현하면 되고, `Human` 클래스는 `Worker`와 `Eater` 인터페이스를 모두 구현합니다. 이는 클라이언트가 더 이상 사용하지 않는 메서드에 의존하지 않아도 되므로 ISP를 준수합니다.
+
+<!--여기부터 계속-->
 
 ## 5. 의존성 역전 원칙(DIP) 🔀
 
@@ -252,14 +280,14 @@ High-level modules should not depend on low-level modules. Both should depend on
 class FileReader {
   read(): string {
     // Read from a file
-    return 'file content';
+    return "file content";
   }
 }
 
 class ContentProcessor {
   process(reader: FileReader): void {
     const content = reader.read();
-    console.log('Processing:', content);
+    console.log("Processing:", content);
   }
 }
 
@@ -271,14 +299,14 @@ interface IReader {
 class FileReader implements IReader {
   read(): string {
     // Read from a file
-    return 'file content';
+    return "file content";
   }
 }
 
 class ContentProcessor {
   process(reader: IReader): void {
     const content = reader.read();
-    console.log('Processing:', content);
+    console.log("Processing:", content);
   }
 }
 ```
