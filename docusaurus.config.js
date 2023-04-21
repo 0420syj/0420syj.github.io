@@ -224,19 +224,11 @@ const config = {
     [
       '@docusaurus/plugin-content-blog',
       {
-        /**
-         * Required for any multi-instance plugin
-         */
         id: 'daily',
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
         routeBasePath: 'daily',
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
         path: './daily',
+        blogSidebarCount: 'ALL',
+        blogSidebarTitle: '전체 글 목록',
       },
     ]
   ]
