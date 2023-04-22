@@ -138,7 +138,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/blog', label: '블로그', position: 'left' },
+          { to: '/blog', label: '공부', position: 'left' },
+          { to: '/daily', label: '일상', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -164,8 +165,12 @@ const config = {
             title: '링크',
             items: [
               {
-                label: '블로그',
+                label: '공부',
                 to: '/blog',
+              },
+              {
+                label: '일상',
+                to: '/daily',
               },
               {
                 label: '튜토리얼',

@@ -38,5 +38,13 @@
   "link.title.Contact": {
     "message": "Contact",
     "description": "The title of the footer links column with title=Contact in the footer"
+  },
+  "link.item.label.공부": {
+    "message": "Study",
+    "description": "The label of footer link with label=공부 linking to /blog"
+  },
+  "link.item.label.일상": {
+    "message": "Daily",
+    "description": "The label of footer link with label=일상 linking to /daily"
   }
 }
