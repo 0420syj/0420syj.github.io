@@ -14,5 +14,13 @@
   "item.label.튜토리얼": {
     "message": "Tutorial",
     "description": "Navbar item with label 튜토리얼"
+  },
+  "item.label.공부": {
+    "message": "Study",
+    "description": "Navbar item with label 공부"
+  },
+  "item.label.일상": {
+    "message": "Daily",
+    "description": "Navbar item with label 일상"
   }
 }

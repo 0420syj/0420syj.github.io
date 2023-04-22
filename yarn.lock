@@ -11,6 +11,7 @@ __metadata:
   dependencies:
     "@docusaurus/core": 2.4.0
     "@docusaurus/module-type-aliases": ^2.4.0
+    "@docusaurus/plugin-content-blog": ^2.4.0
     "@docusaurus/preset-classic": 2.4.0
     "@docusaurus/theme-common": ^2.4.0
     "@docusaurus/types": ^2.4.0
@@ -1855,7 +1856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-content-blog@npm:2.4.0":
+"@docusaurus/plugin-content-blog@npm:2.4.0, @docusaurus/plugin-content-blog@npm:^2.4.0":
   version: 2.4.0
   resolution: "@docusaurus/plugin-content-blog@npm:2.4.0"
   dependencies:
