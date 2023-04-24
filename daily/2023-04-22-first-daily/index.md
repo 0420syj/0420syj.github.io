@@ -2,7 +2,7 @@
 slug: first-daily
 title: "첫 포스트는 고양이 🐱"
 description: 일상적인 내용을 기록하는 공간을 만들었습니다. 오늘의 주제는 고양이입니다.
-# image: "./images/preview.png"
+image: "./images/maru-aki.jpg"
 authors: [wannysim]
 tags: [cat]
 enableComments: true
