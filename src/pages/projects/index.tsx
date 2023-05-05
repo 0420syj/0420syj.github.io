@@ -13,7 +13,7 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <main>갓데에에에엄 지미. 디씨ㅅ 썸 씨리어스 구르메 씟~</main>
+      <main>갓데에에에엄 지미. 디씨ㅅ 썸 씨리어스 구르메 씟~~</main>
     </Layout>
   );
 }
