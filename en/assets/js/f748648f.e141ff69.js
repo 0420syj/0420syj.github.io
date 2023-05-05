@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[2453],{6653:a=>{a.exports=JSON.parse('{"label":"thinking","permalink":"/en/daily/tags/thinking","allTagsPath":"/en/daily/tags","count":1}')}}]);

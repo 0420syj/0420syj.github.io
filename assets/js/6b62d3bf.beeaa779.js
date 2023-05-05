@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[2208],{8369:s=>{s.exports=JSON.parse('{"label":"cohesion","permalink":"/blog/tags/cohesion","allTagsPath":"/blog/tags","count":1}')}}]);

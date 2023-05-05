@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[3050],{826:a=>{a.exports=JSON.parse('{"label":"method chaining","permalink":"/blog/tags/method-chaining","allTagsPath":"/blog/tags","count":1}')}}]);

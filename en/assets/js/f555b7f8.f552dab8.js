@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[1980],{837:s=>{s.exports=JSON.parse('{"label":"copilot","permalink":"/en/blog/tags/copilot","allTagsPath":"/en/blog/tags","count":1}')}}]);
