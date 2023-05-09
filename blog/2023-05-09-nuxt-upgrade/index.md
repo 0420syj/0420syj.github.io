@@ -2,7 +2,7 @@
 slug: nuxt-upgrade
 title: (Nuxt) nuxt build 오류
 description:
-<!-- image: "./images/preview.png" -->
+# image: "./images/preview.png"
 authors: [wannysim]
 tags: [nuxt, troubleshooting]
 enableComments: true
@@ -14,7 +14,7 @@ GitHub Codespaces로 작업 중에 nuxt build에 오류가 발생했습니다.
 
 Node 버전은 v19였습니다.
 
-![error-log](./images/error-log.png "error-log"")
+![error-log](./images/error-log.png "error-log")
 
 로그를 확인해보니 nuxt 쪽에 문제가 있어보입니다.
 
