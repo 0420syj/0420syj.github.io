@@ -1,7 +1,7 @@
 ---
 slug: nuxt-upgrade
 title: (Nuxt) nuxt build 오류
-description:
+description: nuxt build 오류
 # image: "./images/preview.png"
 authors: [wannysim]
 tags: [nuxt, troubleshooting]
