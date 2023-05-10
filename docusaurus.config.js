@@ -13,6 +13,7 @@ const COMMON_DATA = {
   linkedInLink: 'https://www.linkedin.com/in/wansim0420/',
   email: '0420syj@naver.com',
   googleAnalyticsTrackingID: 'G-HWPS68LZ2H',
+  googleTagManagerContainerId: 'G-HWPS68LZ2H',
   algolia: {
     appId: 'AZOQYC8R4V',
     apiKey: '79ee993e9201fa24d7434de5983ea99b',
@@ -88,6 +89,9 @@ const config = {
           trackingID: `${COMMON_DATA.googleAnalyticsTrackingID}`,
           anonymizeIP: true,
         },
+        googleTagManager: {
+          containerId: `${COMMON_DATA.googleTagManagerContainerId}`,
+        }
       }),
     ],
   ],
