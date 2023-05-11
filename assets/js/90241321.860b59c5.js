@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[7543],{2025:a=>{a.exports=JSON.parse('{"label":"japan","permalink":"/daily/tags/japan","allTagsPath":"/daily/tags","count":1}')}}]);

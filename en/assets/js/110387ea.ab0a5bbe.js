@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[8555],{5171:a=>{a.exports=JSON.parse('{"label":"osaka","permalink":"/en/daily/tags/osaka","allTagsPath":"/en/daily/tags","count":1}')}}]);

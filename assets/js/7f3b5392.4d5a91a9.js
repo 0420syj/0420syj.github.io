@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[5004],{3169:a=>{a.exports=JSON.parse('[{"label":"thinking","permalink":"/daily/tags/thinking","count":1},{"label":"travel","permalink":"/daily/tags/travel","count":1},{"label":"cat","permalink":"/daily/tags/cat","count":1}]')}}]);
