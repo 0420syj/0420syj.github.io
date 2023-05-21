@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[106],{2854:s=>{s.exports=JSON.parse('{"label":"storybook","permalink":"/en/blog/tags/storybook","allTagsPath":"/en/blog/tags","count":1}')}}]);
