@@ -50,9 +50,18 @@ election)
 ## Yarn 2+ (Berry)
 
 이 글을 작성하게 된 계기는 Yarn 2+ 에서는 `yarn upgrade`가 사라졌기 때문입니다.
-대신 `yarn upgrade-interactive`를 사용할 수 있습니다.
 
-하지만 바로 사용할 수 없습니다. 아래에서 자세히 알아보겠습니다.
+대신 동일한 기능을 하는 `yarn up` 명령어를 사용할 수 있습니다.
+또는 이전 버전과 마찬가지로 `yarn upgrade-interactive`를 사용할 수 있습니다.
+
+### `yarn up`
+
+```bash
+yarn up [package-name]@[version] # 특정 버전으로 업그레이드
+yarn up [package-name] # 최신 버전으로 업그레이드
+```
+
+자세한 내용은 [yarn 공식 문서](https://yarnpkg.com/cli/up)를 참고하세요.
 
 ### `yarn upgrade-interactive`
 
