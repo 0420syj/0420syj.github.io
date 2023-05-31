@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[8715],{5959:e=>{e.exports=JSON.parse('{"label":"yarn berry","permalink":"/en/blog/tags/yarn-berry","allTagsPath":"/en/blog/tags","count":1}')}}]);
