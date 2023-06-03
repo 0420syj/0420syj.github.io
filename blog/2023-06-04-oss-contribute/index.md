@@ -26,9 +26,9 @@ PR 링크 : [#9006](https://github.com/facebook/docusaurus/pull/9006)
 이 블로그도 docusaurus로 만들기도 했고, facebook(현 Meta)에서 만들었다보니 여러모로 이점이 많습니다.
 
 그러던 중 작은 오류를 발견했습니다.
-새로운 version이 release되어, yarn을 통해 어떻게 upgrade 할 수 있는지 console 메시지가 나왔는데, 업그레이드 명령어가 잘못 나오고 있었습니다.
+새로운 version이 release되어, yarn을 통해 어떻게 upgrade 할 수 있는지 console 메시지가 출력되는데, 업그레이드 명령어가 잘못 안내되고 있었습니다.
 
-저는 yarn berry를 쓰고 있어서, `yarn up`이 사용되어야 하는데 `yarn upgrade`가 나오고 있었습니다.
+저는 yarn berry를 쓰고 있어서, `yarn up`이 출력되어야 하는데 `yarn upgrade`가 출력되고 있었습니다.
 
 언젠가 큰 오픈소스에 contribution 하고 싶은 욕심이 있었는데, 이때다 싶어 오류를 수정하고 PR을 날려보기로 했습니다.
 
@@ -57,19 +57,28 @@ PR 링크 : [#9006](https://github.com/facebook/docusaurus/pull/9006)
 저같은 주니어 개발자도 발견한 버그였으니, 이제부터는 누가 먼저 정확하고 빠르게 PR을 작성하느냐 문제입니다.
 
 Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
-마지막으로 Pull Requests에 이미 누군가 같은 내용을 작성했는지 살펴봅니다. 없었습니다.
+마지막으로 Pull Requests에 이미 누군가 작성했는지 살펴봅니다. 없었습니다.
 
 ### 3. `CONTRIBUTING.md` 읽어보기
 
-규모있는 오픈소스 프로젝트에는 `CONTRIBUTING.md` 파일이 무조건 존재한다.
-읽지 않고 무작정 PR을 날리면 reject 당하는 것은 물론 maintainers에게 불편을 끼칠 수도 있다.
+규모있는 오픈소스 프로젝트에는 `CONTRIBUTING.md` 파일이 무조건 존재합니다. 이 문서에는 PR을 위한 convention이 아주 상세하게 기록되어 있습니다.
 
-그래서 [`CONTRIBUTING.md`](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests) 파일을 읽어보았다.
+여러분이 기여하고 싶은 오픈소스에 이 문서가 없다면, 아래와 같은 상황임을 의심해볼 수 있습니다.
+- 기여 가이드 문서가 필요하지 않은 정도의 간단한 오픈소스 프로젝트
+- 업데이트가 활발하게 이루어지지 않고 있음
+
+1번째 문제는 주관적이기도 하고, project maintainers 를 잘 배려할 수 있는 자세가 되어있다면 문제가 되지 않습니다. 하지만 2번째 상황인 경우 여러분의 PR은 그 어느 누구에게도 merge되지 않을 가능성이 높겠지요.
+
+아무튼 `CONTRIBUTING.MD`의 간단한 규칙조차 지키지 않은 성의없는 PR을 날린다면, reject 당하는 것은 물론 maintainers에게 큰 불편을 끼칠 수도 있다. 본인의 시간을 할애해서 여러분의 코드를 검토해줄 maintainers이자 reviewers를 최대한 respect하고 배려합시다.
+
+그래서 [`CONTRIBUTING.md`](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests) 파일을 읽어보고 그에 맞게 PR를 준비합니다.
 
 ### 4. 코드 수정
 
-해당 프로젝트를 fork한 후, 수정한 코드를 커밋했다.
-커밋 메시지도 규칙에 맞게 작성했다.
+해당 프로젝트를 fork한 후, 버그 수정을 위한 branch를 생성합니다. 그리고 수정한 코드를 커밋합니다.
+커밋 메시지도 정해진 규칙에 맞게 작성합니다.
+
+첫 PR은 가급적 1개의 commit으로 작성합니다. 그 이유에 대해서는 5번 문단에서 서술하겠습니다.
 
 ### 5. PR 날리기
 
