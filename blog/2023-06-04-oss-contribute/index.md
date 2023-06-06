@@ -147,25 +147,21 @@ history를 남기기 위해서입니다.
 
 코드 수정 제안을 수락하자, 바로 commit이 이루어졌습니다.
 
-해당 리뷰어가 이 PR에 대해 나와 함께 공동 작업이 이루어졌다.
-`Co-authored-by: 2번째 리뷰어` 라는 메세지가 commit description에 추가되었다.
-
 ### 10. PR Merge
 
-처음 리뷰해주었던 리뷰어가
-오픈소스 세계에서는 마지막 리뷰라고 할 수 있는 그 댓글, "LGTM"을 남겼다.
+처음 리뷰해주었던 reviewer가 오픈소스 세계에서는 마지막 리뷰라고 할 수 있는 그 댓글, "LGTM"을 남겼습니다.
 
-이윽고 PR이 Merge되었다.
+이윽고 저의 PR이 Merge되었다.
+이로써 Docusaurus main branch에 반영되었습니다.
 
 ### 11. 마무리
 
-내가 작업했던 branch, fork한 repo를 삭제했다.
+제가 작업했던 branch, fork했던 repository는 삭제했습니다.
 
-이 코드는 docusaurus main repo에 반영되었다.
-아마 v2.4.2부터는 해당 버그가 수정되었을 것이다.
+직업했던 내용은 아마 v2.4.2 버전에 반영될 것입니다.
 
-이제 yarn berry를 사용하는 사람들은
-올바른 버전 업그레이드 명령어를 확인할 수 있을 것이다.
+이제 Docuaurus에서 yarn berry를 사용하는 유저는
+올바른 버전 업그레이드 명령어를 확인할 수 있습니다.
 
 ## 후기
 
