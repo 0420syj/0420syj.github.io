@@ -2,7 +2,7 @@
 slug: oss-contribute
 title: "오픈소스 docusaurus 기여 후기 💻"
 description: "오픈소스 facebook/docusaurus에 기여한 후기를 남깁니다."
-image: "./images/preview.png"
+image: "./images/merged.png"
 authors: [wannysim]
 tags: [yarn, yarn berry, package, "yarn upgrade", "yarn upgrade-interactive"]
 enableComments: true
@@ -12,40 +12,46 @@ enableComments: true
 
 <!-- truncate -->
 
-## 배경
+## 배경 📖
 
-평소에 Docusaurus에 관심이 많았습니다.
+![docusaurus](./images/docusaurus-social-card.jpg)
+
+> 평소에 Docusaurus에 관심이 많았습니다.
+
 이 블로그도 Docusaurus로 만들기도 했고, facebook(현 Meta)에서 만들었다보니 여러모로 이점이 많습니다.
 
-그러던 중 작은 오류를 발견했습니다.
+**그러던 중 작은 오류를 발견했습니다.**
+
 새로운 version이 release되어, yarn을 통해 어떻게 upgrade 할 수 있는지 console 메시지가 출력되는데, 업그레이드 명령어가 잘못 안내되고 있었습니다.
 
 저는 yarn berry를 쓰고 있어서, `yarn up`이 출력되어야 하는데 `yarn upgrade`가 출력되고 있었습니다.
 
 언젠가 큰 오픈소스에 contribution 하고 싶은 욕심이 있었는데, 이때다 싶어 오류를 수정하고 [PR#9006](https://github.com/facebook/docusaurus/pull/9006)을 작성했고 다행히 merge되었습니다.
 
-## 과정
+PR 링크 : https://github.com/facebook/docusaurus/pull/9006
+
+## 과정 📝
 
 첫 contribution은 아니지만, 이정도로 큰 오픈소스 프로젝트는 처음이었습니다.
 
 또한 처음으로 오픈소스에 contribution 하고 싶은 분들이게 도움이 될 것 같아, 과정을 상세하게 기록하고자 합니다.
 
-### 1. 최신 코드 확인
+### 1. 최신 코드 확인 👀
 
-우선 main 브랜치의 최신 코드를 보고 문제를 파악했습니다.
-그런데, 누군가에 의해 이미 버그가 수정되어 있었습니다.
+![bug-already-fixed](./images/bug-already-fixed.png)
 
-새로 release된 version에서 이미 수정된 것이었습니다.
+> 우선 main 브랜치의 최신 코드를 보고 문제를 파악했습니다.  
+> 그런데, 누군가에 의해 이미 버그가 수정되어 있었습니다.
 
-혹시 모르니 해당 파일의 history를 찾아보고, 어떻게 수정되었는지 살펴보기로 합니다.
+새로 release된 version에서 이미 수정된 것이었습니다. 혹시 모르니 해당 파일의 history를 찾아보고, 어떻게 수정되었는지 살펴보기로 합니다.
 
 ### 2. 문제 파악
 
 당시 기준으로 1달 전에 또 다른 contributor에 의해 버그가 수정되었습다. 코드를 보니 그 아이디어가 아주 좋았습니다.
 
-그렇게 이 버그로 PR하지 못하겠구나라는 생각이 들던 찰나, 새로운 버그가 보였습니다.
-검증을 해보니, 특정 조건에서 yarn version을 다르게 인식하는 버그가 있었습니다.
+> 그렇게 이 버그로 PR하지 못하겠구나라는 생각이 들던 찰나, 새로운 버그가 보였습니다.
 
+검증을 해보니, 특정 조건에서 yarn version을 다르게 인식하는 버그가 있었습니다.
 저같은 주니어 개발자도 발견한 버그였으니, 이제부터는 누가 먼저 정확하고 빠르게 PR을 작성하느냐 문제입니다.
 
 Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
@@ -75,7 +81,9 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 
 ### 5. PR 날리기
 
-이제 PR을 날릴 차례입니다. 이미 정해진 양식이 있었기 때문에, 그에 따라 상세하게 작성합니다.
+![create-pr](./images/create-pr.png)
+
+> 이제 PR을 날릴 차례입니다. 이미 정해진 양식이 있었기 때문에, 그에 따라 상세하게 작성합니다.
 
 이미 Merge된 PR들도 함께 살펴보고 보강해서 작성하면 merge될 확률을 높일 수 있습니다.
 
@@ -96,8 +104,10 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 
 ### 6. 첫 리뷰
 
-PR을 작성하고, 리뷰를 받기 위해 기다렸습니다.
-첫 리뷰는 작성으로부터 정확히 일주일이 걸렸습니다.
+![first-review](./images/first-review.png)
+
+> PR을 작성하고, 리뷰를 받기 위해 기다렸습니다.  
+> 첫 리뷰는 작성으로부터 정확히 일주일이 걸렸습니다.
 
 Reviewer는 제가 제보한 버그와 아이디어에 대해서는 동의했습니다.
 다만 제 코드가 다소 복잡하고, 이를 개선할 수 있는 방안을 제시했습니다.
@@ -121,8 +131,10 @@ history를 남기기 위해서입니다.
 
 ### 8. 2번째 리뷰 & 코드 수정
 
-2번째 리뷰는 하루도 채 걸리지 않았습니다.
-이번에는 다른 reviewer가 리뷰를 해주었습니다.
+![second-review](./images/second-review.png)
+
+> 2번째 리뷰는 하루도 채 걸리지 않았습니다.
+> 이번에는 다른 reviewer가 리뷰를 해주었습니다.
 
 그 reviewer는 새로운 코드를 보고, 이 코드가 문제가 될 수 있다고 지적했습니다.
 
@@ -138,9 +150,10 @@ history를 남기기 위해서입니다.
 
 ### 9. 마지막 리뷰
 
-이전 reviewer가 다시 리뷰를 해주었습니다.
+![[last-review](./images/last-review.png]]
 
-불필요한 연산자를 제거하는 것을 제안했습니다.
+> 이전 reviewer가 다시 리뷰를 해주었습니다.
+> 불필요한 연산자를 제거하는 것을 제안했습니다.
 
 왜 그것이 불필요한지 생각해보고, 어떤 면에서 reviewer의 코드가 더 나은지에 대해 생각해봤습니다.
 결론적으로 reviewer의 코드가 더 나았습니다.
@@ -149,7 +162,9 @@ history를 남기기 위해서입니다.
 
 ### 10. PR Merge
 
-처음 리뷰해주었던 reviewer가 오픈소스 세계에서는 마지막 리뷰라고 할 수 있는 그 댓글, "LGTM"을 남겼습니다.
+![merged](./images/merged.png)
+
+> 처음 리뷰해주었던 reviewer가 오픈소스 세계에서는 마지막 리뷰라고 할 수 있는 그 댓글, "LGTM"을 남겼습니다.
 
 이윽고 저의 PR이 Merge되었다.
 이로써 Docusaurus main branch에 반영되었습니다.
@@ -163,7 +178,7 @@ history를 남기기 위해서입니다.
 이제 Docuaurus에서 yarn berry를 사용하는 유저는
 올바른 버전 업그레이드 명령어를 확인할 수 있습니다.
 
-## 후기
+## 후기 📝
 
 이번 PR을 통해, 오픈소스에 기여하는 과정을 경험해보았습니다.
 지나고 보니 크게 아래 3가지가 오픈소스 기여에 있어서 중요한 것 같습니다.
@@ -182,7 +197,7 @@ history를 남기기 위해서입니다.
 
 그리고 대형 프로젝트라면 그만큼 뛰어난 분들이기 때문에, 그분들의 review는 더욱 가치가 있습니다. 저는 특히나 주니어 개발자 입장에서 그분들의 review를 뛰어난 시니어 개발자로부터 review를 받을 수 있는 좋은 기회라고 생각하고 받아들였습니다. 실제로 그분들의 review를 통해 많이 배웠습니다.
 
-## 마치며
+## 마치며 🖋️
 
 앞으로도 오픈소스에 기여하는 기회가 있다면, 더욱 열심히 기여하고 싶습니다.
 이글을 읽게 될 누군가에게 도움이 되었으면 좋겠습니다 😊
