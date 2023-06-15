@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[1484],{5382:a=>{a.exports=JSON.parse('{"label":"yarn upgrade","permalink":"/en/blog/tags/yarn-upgrade","allTagsPath":"/en/blog/tags","count":1}')}}]);
