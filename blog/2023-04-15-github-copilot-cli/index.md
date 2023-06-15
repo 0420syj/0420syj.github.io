@@ -12,12 +12,6 @@ enableComments: true
 
 <!-- truncate -->
 
-:::info
-
-글의 일부는 Copilot에 의해 작성되었습니다.
-
-:::
-
 ## 써보기 전에 🚶
 
 ### GitHub Copilot이란?

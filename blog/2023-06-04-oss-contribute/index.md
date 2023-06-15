@@ -1,14 +1,14 @@
 ---
 slug: oss-contribute
-title: "오픈소스 docusaurus 기여 후기 💻"
+title: "오픈소스 기여 후기(Docusaurus) 💻"
 description: "오픈소스 facebook/docusaurus에 기여한 후기를 남깁니다."
 image: "./images/merged.png"
 authors: [wannysim]
-tags: [yarn, yarn berry, package, "yarn upgrade", "yarn upgrade-interactive"]
+tags: ["open source", "docusaurus", "contribution", "github"]
 enableComments: true
 ---
 
-오픈소스 [facebook/docusaurus](https://github.com/facebook/docusaurus)에 기여한 후기를 남깁니다.
+Facebook에서 만든 오픈소스 CMS, [Docusaurus](https://github.com/facebook/docusaurus)에 기여한 후기를 남깁니다.
 
 <!-- truncate -->
 
@@ -18,7 +18,7 @@ enableComments: true
 
 > 평소에 Docusaurus에 관심이 많았습니다.
 
-이 블로그도 Docusaurus로 만들기도 했고, facebook(현 Meta)에서 만들었다보니 여러모로 이점이 많습니다.
+지금 보고계신 페이지도 Docusaurus로 만들었고, facebook(현 Meta)에서 만들었다보니 여러모로 이점이 많습니다.
 
 **그러던 중 작은 오류를 발견했습니다.**
 
@@ -34,7 +34,7 @@ PR 링크 : https://github.com/facebook/docusaurus/pull/9006
 
 첫 contribution은 아니지만, 이정도로 큰 오픈소스 프로젝트는 처음이었습니다.
 
-또한 처음으로 오픈소스에 contribution 하고 싶은 분들이게 도움이 될 것 같아, 과정을 상세하게 기록하고자 합니다.
+오랜만에 재밌는 경험이기도 했고, 처음으로 오픈소스에 contribution 하고 싶은 분들이게 도움이 될 것 같아 기록을 남깁니다.
 
 ### 1. 최신 코드 확인 👀
 
@@ -45,7 +45,7 @@ PR 링크 : https://github.com/facebook/docusaurus/pull/9006
 
 새로 release된 version에서 이미 수정된 것이었습니다. 혹시 모르니 해당 파일의 history를 찾아보고, 어떻게 수정되었는지 살펴보기로 합니다.
 
-### 2. 문제 파악
+### 2. 문제 파악 🕵️‍♂️
 
 당시 기준으로 1달 전에 또 다른 contributor에 의해 버그가 수정되었습다. 코드를 보니 그 아이디어가 아주 좋았습니다.
 
@@ -57,7 +57,7 @@ PR 링크 : https://github.com/facebook/docusaurus/pull/9006
 Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 마지막으로 Pull Requests에 이미 누군가 작성했는지 살펴봅니다. 없었습니다.
 
-### 3. `CONTRIBUTING.md` 읽어보기
+### 3. `CONTRIBUTING.md` 읽어보기 📖
 
 규모있는 오픈소스 프로젝트에는 `CONTRIBUTING.md` 파일이 무조건 존재합니다. 이 문서에는 PR을 위한 convention이 아주 상세하게 기록되어 있습니다.
 
@@ -72,14 +72,14 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 
 그래서 [`CONTRIBUTING.md`](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md#pull-requests) 파일을 읽어보고 그에 맞게 PR를 준비합니다.
 
-### 4. 코드 수정
+### 4. 코드 수정 🛠
 
 해당 프로젝트를 fork한 후, 버그 수정을 위한 branch를 생성합니다. 그리고 수정한 코드를 커밋합니다.
 커밋 메시지도 정해진 규칙에 맞게 작성합니다.
 
 첫 PR은 가급적 1개의 commit으로 작성합니다. 그 이유에 대해서는 5번 문단에서 서술하겠습니다.
 
-### 5. PR 날리기
+### 5. PR 날리기 📮
 
 ![create-pr](./images/create-pr.png)
 
@@ -90,7 +90,7 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 어떤 문제를, 왜, 어떻게 수정했는지, 그리고 어떻게 테스트했는지 등을 자세히 적었습니다.
 이전에 같은 문제에 대한 PR이 있었기 때문에, 테스트 방법은 해당 PR을 참고하여 똑같이 작성했습니다.
 
-### PR 최초 작성 후 추가 commit
+### 6. PR 최초 작성 후 추가 commit ✍️
 
 처음 PR을 날린 후에도 추가 commit을 통해 수정이 가능합니다.
 
@@ -102,7 +102,7 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 사실 첫 PR을 날린 후에 제 코드에서 수정할 사항이 있어, 이를 Close하고 새로운 PR을 날렸습니다.
 이 사실을 몰라서 있었던 실수입니다.
 
-### 6. 첫 리뷰
+### 7. 첫 리뷰 🤝
 
 ![first-review](./images/first-review.png)
 
@@ -115,7 +115,7 @@ Reviewer는 제가 제보한 버그와 아이디어에 대해서는 동의했습
 저는 `js-yaml`이라는 라이브러리를 사용하여 간접적으로 yarn version을 확인했는데,
 reviewer는 `shelljs`를 사용하여 command line을 통해 yarn version을 확인하는 방법을 제시했습니다.
 
-### 7. 리뷰 확인 후, 코드 수정
+### 8. 리뷰 확인 후, 코드 수정 🤝
 
 리뷰 내용에 대한 답글을 남겼습니다.
 당연히 reviewer의 코드가 훨씬 간결하고, 명령어로 yarn 버전을 확인한다는 점에서 더 좋다고 생각했습니다.
@@ -129,7 +129,7 @@ reviewer는 `shelljs`를 사용하여 command line을 통해 yarn version을 확
 리뷰를 바탕으로 코드를 수정했고, 이번에는 1개의 commit으로 squash하지 않았습니다.
 history를 남기기 위해서입니다.
 
-### 8. 2번째 리뷰 & 코드 수정
+### 9. 2번째 리뷰 & 코드 수정 🤝
 
 ![second-review](./images/second-review.png)
 
@@ -148,9 +148,9 @@ history를 남기기 위해서입니다.
 추가적으로 리뷰에는 언급되지 않았던 부분도 일부 수정했습니다.
 이 부분은 따로 댓글을 남겨, 왜 수정했는지에 대해서도 설명했습니다.
 
-### 9. 마지막 리뷰
+### 10. 마지막 리뷰 👍
 
-![[last-review](./images/last-review.png]]
+![last-review](./images/last-review.png)
 
 > 이전 reviewer가 다시 리뷰를 해주었습니다.
 > 불필요한 연산자를 제거하는 것을 제안했습니다.
@@ -160,7 +160,7 @@ history를 남기기 위해서입니다.
 
 코드 수정 제안을 수락하자, 바로 commit이 이루어졌습니다.
 
-### 10. PR Merge
+### 11. PR Merge 🎉
 
 ![merged](./images/merged.png)
 
@@ -169,7 +169,7 @@ history를 남기기 위해서입니다.
 이윽고 저의 PR이 Merge되었다.
 이로써 Docusaurus main branch에 반영되었습니다.
 
-### 11. 마무리
+### 12. 마무리 🎬
 
 제가 작업했던 branch, fork했던 repository는 삭제했습니다.
 
@@ -183,15 +183,15 @@ history를 남기기 위해서입니다.
 이번 PR을 통해, 오픈소스에 기여하는 과정을 경험해보았습니다.
 지나고 보니 크게 아래 3가지가 오픈소스 기여에 있어서 중요한 것 같습니다.
 
-### 1. 평소에 오픈소스에 관심 가지기
+### 평소에 오픈소스에 관심 가지기
 
 평소에 사용하고 있는 오픈소스에 관심을 가지고, 사용하면서 문제점을 발견하고, 이를 해결하는 할 수 있는 방법 생각해보면 좋습니다. 저의 경우에는 블로그를 위해 Docusaurus를 사용하다가 문제점을 발견했습니다.
 
-### 2. 이미 Merge된 PR을 찾아보기
+### 이미 Merge된 PR을 찾아보기
 
 각 오픈소스마다 나름의 컨벤션과 문화가 존재합니다. 이를 가장 빠르고 쉽게 파악할 수 있는 방법은 이미 Merge된 PR을 찾아보는 것입니다.
 
-### 3. Review를 긍정적으로 받아들이기
+### Review를 긍정적으로 검토하기
 
 우리에게 review를 남겨줄 reviewer이자 해당 프로젝트의 maintainer들은 그 프로젝트를 누구보다 가장 잘 이해하는 사람들입니다. 그분들의 review는 결국 그 프로젝트를 더 발전시키는 것을 목표로 하고 있습니다.
 
