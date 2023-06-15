@@ -90,7 +90,7 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 어떤 문제를, 왜, 어떻게 수정했는지, 그리고 어떻게 테스트했는지 등을 자세히 적었습니다.
 이전에 같은 문제에 대한 PR이 있었기 때문에, 테스트 방법은 해당 PR을 참고하여 똑같이 작성했습니다.
 
-### 6. PR 최초 작성 후 추가 commit 📮
+### 6. PR 최초 작성 후 추가 commit ✍️
 
 처음 PR을 날린 후에도 추가 commit을 통해 수정이 가능합니다.
 
@@ -102,7 +102,7 @@ Issues에 이미 누군가 지적했는지 살펴봅니다. 없었습니다.
 사실 첫 PR을 날린 후에 제 코드에서 수정할 사항이 있어, 이를 Close하고 새로운 PR을 날렸습니다.
 이 사실을 몰라서 있었던 실수입니다.
 
-### 7. 첫 리뷰 📮
+### 7. 첫 리뷰 🤝
 
 ![first-review](./images/first-review.png)
 
@@ -115,7 +115,7 @@ Reviewer는 제가 제보한 버그와 아이디어에 대해서는 동의했습
 저는 `js-yaml`이라는 라이브러리를 사용하여 간접적으로 yarn version을 확인했는데,
 reviewer는 `shelljs`를 사용하여 command line을 통해 yarn version을 확인하는 방법을 제시했습니다.
 
-### 8. 리뷰 확인 후, 코드 수정 📮
+### 8. 리뷰 확인 후, 코드 수정 🤝
 
 리뷰 내용에 대한 답글을 남겼습니다.
 당연히 reviewer의 코드가 훨씬 간결하고, 명령어로 yarn 버전을 확인한다는 점에서 더 좋다고 생각했습니다.
@@ -129,7 +129,7 @@ reviewer는 `shelljs`를 사용하여 command line을 통해 yarn version을 확
 리뷰를 바탕으로 코드를 수정했고, 이번에는 1개의 commit으로 squash하지 않았습니다.
 history를 남기기 위해서입니다.
 
-### 9. 2번째 리뷰 & 코드 수정 📮
+### 9. 2번째 리뷰 & 코드 수정 🤝
 
 ![second-review](./images/second-review.png)
 
@@ -148,7 +148,7 @@ history를 남기기 위해서입니다.
 추가적으로 리뷰에는 언급되지 않았던 부분도 일부 수정했습니다.
 이 부분은 따로 댓글을 남겨, 왜 수정했는지에 대해서도 설명했습니다.
 
-### 10. 마지막 리뷰 📮
+### 10. 마지막 리뷰 👍
 
 ![last-review](./images/last-review.png)
 
@@ -160,7 +160,7 @@ history를 남기기 위해서입니다.
 
 코드 수정 제안을 수락하자, 바로 commit이 이루어졌습니다.
 
-### 11. PR Merge 📮
+### 11. PR Merge 🎉
 
 ![merged](./images/merged.png)
 
@@ -169,7 +169,7 @@ history를 남기기 위해서입니다.
 이윽고 저의 PR이 Merge되었다.
 이로써 Docusaurus main branch에 반영되었습니다.
 
-### 12. 마무리 📮
+### 12. 마무리 🎬
 
 제가 작업했던 branch, fork했던 repository는 삭제했습니다.
 
