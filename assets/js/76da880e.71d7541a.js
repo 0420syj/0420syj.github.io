@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[8561],{6762:s=>{s.exports=JSON.parse('{"label":"csr","permalink":"/blog/tags/csr","allTagsPath":"/blog/tags","count":1}')}}]);
