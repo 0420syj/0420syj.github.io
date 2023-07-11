@@ -6,10 +6,9 @@ image: "./images/preview.png"
 authors: [wannysim]
 tags: []
 enableComments: true
-draft: true
 ---
 
-내 하루 일과 기록
+요즘 보내고 있는 일상을 기록해본다.
 
 <!-- truncate -->
 
@@ -20,6 +19,9 @@ draft: true
 > 링크 : https://labs.openai.com/s/PceeoHDZycVmxFaq5G3f3N4R
 
 DALL-E이라는 AI가 만들어낸 이미지다.
+프롬프트는 `A grove of sequoia trees that stretches for miles. Claude Monet-style painting` 였다.
+
+모네가 수련 연작을 그리던 정원 뒷편 어딘가일 것 같다. AI 대단하다.
 
 ## 요즘 하루 일과
 
