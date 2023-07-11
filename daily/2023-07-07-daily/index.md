@@ -4,7 +4,7 @@ title: "요즘 일상 기록 📝"
 description: "내 하루 일과 기록"
 image: "./images/preview.png"
 authors: [wannysim]
-tags: []
+tags: [life]
 enableComments: true
 ---
 
