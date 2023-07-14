@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prism-react-renderer", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:1.3.5"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -64,7 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prism-react-renderer", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:1.3.5"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:7f480b2358a7e8f579f9a83a52f6cfa15f0ec96afa7d4ea9c9b3fe087143acc76ec6b83cdcdab3a9c45474398b94b4f64ac33f9bf03a7265356d093e984523a9#npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -13991,10 +13991,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-ecf29fafbd-d26b6ba97b.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-bd21d74a9d-f53bfe97f7.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "HARD"\
         }]\
