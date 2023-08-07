@@ -1,5 +1,5 @@
 ---
-slug: 2023-07-14-daily
+slug: 2023-08-07-daily
 title: "🧑‍🚒 욕심이 많다"
 description: "요즘들어 내가 가진 능력에 비해 욕심이 과하지 않나, 생각한다"
 image: "./images/preview.png"
@@ -15,7 +15,7 @@ draft: true
 
 ## 🖼️ 오늘의 썸네일
 
-![썸네일](./images/preview.png)
+![썸네일](2023-08-07-daily/images/preview.png)
 
 > 링크 : https://labs.openai.com/s/g2FopLU0fCiewLdfpJRz5tsw
 
@@ -57,7 +57,7 @@ Header 텍스트와 함께 사용하면, 그 내용을 작은 이미지 하나�
 
 뒤늦게 주변을 보니 대부분 아이콘이 문장 앞부분에 위치한다.
 
-![아이콘](./images/icon.png)
+![아이콘](icon.png)
 > 어찌보면 당연한건데 왜 이제 알았을까!
 
 ### Obsidian 진짜 편하다
