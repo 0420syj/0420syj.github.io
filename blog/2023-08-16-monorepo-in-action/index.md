@@ -70,17 +70,11 @@ package.json에 "packageManager" 속성을 통해 yarn 버전이 명시되고, �
 # Yarn Berry with node-modules
 
 .pnp.*
-
 .yarn/*
-
 !.yarn/patches
-
 !.yarn/plugins
-
 !.yarn/releases
-
 !.yarn/sdks
-
 !.yarn/versions
 
 node_modules
