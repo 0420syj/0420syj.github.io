@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[6088],{5278:e=>{e.exports=JSON.parse('{"label":"packageExtensions","permalink":"/en/blog/tags/package-extensions","allTagsPath":"/en/blog/tags","count":1}')}}]);
