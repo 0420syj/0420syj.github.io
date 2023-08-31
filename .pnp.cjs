@@ -92,7 +92,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@algolia/autocomplete-preset-algolia", "virtual:98381d7ef53032cb5e912026fd375ba91eb6a8377e3887e873b54de3d8c2e05c35c8646d6200069c04d287deadb9dc4c7ac0860a0172b657237651d0fb6c2501#npm:1.7.4"],\
             ["@algolia/autocomplete-shared", "npm:1.7.4"],\
-            ["@algolia/client-search", null],\
+            ["@algolia/client-search", "npm:4.19.1"],\
             ["@types/algolia__client-search", null],\
             ["@types/algoliasearch", null],\
             ["algoliasearch", "npm:4.17.0"]\
@@ -130,6 +130,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@algolia-cache-common-npm-4.17.0-81821fbd00-cbf8d6ca4e.zip/node_modules/@algolia/cache-common/",\
           "packageDependencies": [\
             ["@algolia/cache-common", "npm:4.17.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-cache-common-npm-4.19.1-9a60d0c149-e4e120b9a5.zip/node_modules/@algolia/cache-common/",\
+          "packageDependencies": [\
+            ["@algolia/cache-common", "npm:4.19.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -178,6 +185,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@algolia/transporter", "npm:4.17.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-client-common-npm-4.19.1-1b3dc87086-d9d919e026.zip/node_modules/@algolia/client-common/",\
+          "packageDependencies": [\
+            ["@algolia/client-common", "npm:4.19.1"],\
+            ["@algolia/requester-common", "npm:4.19.1"],\
+            ["@algolia/transporter", "npm:4.19.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@algolia/client-personalization", [\
@@ -202,6 +218,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@algolia/transporter", "npm:4.17.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-client-search-npm-4.19.1-433fe878b5-16f1112bda.zip/node_modules/@algolia/client-search/",\
+          "packageDependencies": [\
+            ["@algolia/client-search", "npm:4.19.1"],\
+            ["@algolia/client-common", "npm:4.19.1"],\
+            ["@algolia/requester-common", "npm:4.19.1"],\
+            ["@algolia/transporter", "npm:4.19.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@algolia/events", [\
@@ -218,6 +244,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@algolia-logger-common-npm-4.17.0-631925d4bd-e635926654.zip/node_modules/@algolia/logger-common/",\
           "packageDependencies": [\
             ["@algolia/logger-common", "npm:4.17.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-logger-common-npm-4.19.1-1490196106-87659bdf11.zip/node_modules/@algolia/logger-common/",\
+          "packageDependencies": [\
+            ["@algolia/logger-common", "npm:4.19.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -249,6 +282,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@algolia/requester-common", "npm:4.17.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-requester-common-npm-4.19.1-58506e245a-b6e0760210.zip/node_modules/@algolia/requester-common/",\
+          "packageDependencies": [\
+            ["@algolia/requester-common", "npm:4.19.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@algolia/requester-node-http", [\
@@ -269,6 +309,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@algolia/cache-common", "npm:4.17.0"],\
             ["@algolia/logger-common", "npm:4.17.0"],\
             ["@algolia/requester-common", "npm:4.17.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.19.1", {\
+          "packageLocation": "./.yarn/cache/@algolia-transporter-npm-4.19.1-387e1d414b-2835d917c5.zip/node_modules/@algolia/transporter/",\
+          "packageDependencies": [\
+            ["@algolia/transporter", "npm:4.19.1"],\
+            ["@algolia/cache-common", "npm:4.19.1"],\
+            ["@algolia/logger-common", "npm:4.19.1"],\
+            ["@algolia/requester-common", "npm:4.19.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2851,6 +2901,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docsearch/react", "virtual:e8b5229bd39acbf67ac051ae922816e9216ea071730bd5533c2ac320fae2187a10f73561c680f1a1e7e76a81db66b3891a7377f9fcf5050d7ce4724344a327a7#npm:3.3.3"],\
             ["@algolia/autocomplete-core", "npm:1.7.4"],\
             ["@algolia/autocomplete-preset-algolia", "virtual:98381d7ef53032cb5e912026fd375ba91eb6a8377e3887e873b54de3d8c2e05c35c8646d6200069c04d287deadb9dc4c7ac0860a0172b657237651d0fb6c2501#npm:1.7.4"],\
+            ["@algolia/client-search", "npm:4.19.1"],\
             ["@docsearch/css", "npm:3.3.3"],\
             ["@types/react", null],\
             ["@types/react-dom", null],\
@@ -6710,7 +6761,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["cosmiconfig-typescript-loader", "virtual:2fac99d0024c6c183fcceaa25299f61acf6eb87f5b758f3458d1f649c5d5a67f717e37b61acaf24370be5fd49e469dee5aba69a9d4bfc731fa4595b34001bd3f#npm:4.3.0"],\
             ["@types/cosmiconfig", null],\
-            ["@types/node", null],\
+            ["@types/node", "npm:18.15.11"],\
             ["@types/ts-node", null],\
             ["@types/typescript", null],\
             ["cosmiconfig", "npm:8.1.3"],\
@@ -11146,6 +11197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/postcss-loader-virtual-2fac99d002/0/cache/postcss-loader-npm-7.2.4-3523bfa295-d75de64f66.zip/node_modules/postcss-loader/",\
           "packageDependencies": [\
             ["postcss-loader", "virtual:0af69900b1ede543c109d1dfe4b8cbf1a8ff7576d625372d9495a339c7f85dfbcb84874dd4d21325824dab6bcd77252ca3191e508333ede7664180df0c5ab4e0#npm:7.2.4"],\
+            ["@types/node", "npm:18.15.11"],\
             ["@types/postcss", null],\
             ["@types/ts-node", null],\
             ["@types/typescript", null],\
