@@ -18,7 +18,7 @@ Facebook에서 만든 오픈소스 CMS, [Docusaurus](https://github.com/facebook
 
 > 평소에 Docusaurus에 관심이 많았습니다.
 
-지금 보고계신 웹사이트도 Docusaurus로 만들었습니다! 
+지금 보고계신 웹사이트도 Docusaurus로 만들었습니다!
 
 facebook에서 만들어서인지 커뮤니티도 잘 구축되어있고, 업데이트도 빠른 편입니다.
 
@@ -26,7 +26,7 @@ facebook에서 만들어서인지 커뮤니티도 잘 구축되어있고, 업데
 
 새로운 version이 release되면 빌드 시점에 업그레이드 명령어를 알려주는데, yarn일 경우 오류가 존재했습니다. 저는 yarn berry를 쓰고 있어서, `yarn up`이 출력되어야 하는데 `yarn upgrade`가 출력되고 있었습니다.
 
-앞서 [Yarn에서 패키지 업그레이드하기 🧶](https://0420syj.github.io/blog/yarn-upgrade)를 작성했던 이유가 사실 이 때문이었습니다.
+앞서 [Yarn에서 패키지 업그레이드하기 🧶](https://wannysim.me/blog/yarn-upgrade)를 작성했던 이유가 사실 이 때문이었습니다.
 
 언젠가 큰 오픈소스에 contribution 하고 싶은 욕심이 있었는데, 이때다 싶어 오류를 수정하고 [PR#9006](https://github.com/facebook/docusaurus/pull/9006)을 작성했고 다행히 merge 되었습니다.
 
