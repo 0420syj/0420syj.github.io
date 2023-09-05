@@ -102,8 +102,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.png',
       colorMode: {
-        respectPrefersColorScheme: true,
         disableSwitch: false,
+        respectPrefersColorScheme: false,
+        defaultMode: 'light',
       },
       algolia: {
         // The application ID provided by Algolia
