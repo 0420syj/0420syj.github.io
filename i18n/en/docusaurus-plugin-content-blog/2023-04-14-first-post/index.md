@@ -69,7 +69,7 @@ I've used [Tistory](https://www.tistory.com/), [Velog](https://velog.io/), and [
 
 To help more people create blogs, I wrote a simple guide to create a Docusaurus blog.
 
-Link: [Docusaurus Tutorial 🦖](https://0420syj.github.io/en/docs/docusaurus-tutorial/intro/)
+Link: [Docusaurus Tutorial 🦖](https://wannysim.me/en/docs/docusaurus-tutorial/intro/)
 
 ## Closing thoughts 🎉
 

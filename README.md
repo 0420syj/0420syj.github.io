@@ -24,4 +24,4 @@ yarn build
 
 ## 간단한 Docusaurus 튜토리얼
 
-[공식 문서](https://docusaurus.io/docs/category/getting-started)나 제가 작성한 [튜토리얼](https://0420syj.github.io/docs/docusaurus-tutorial/intro/)을 참고해주세요.
+[공식 문서](https://docusaurus.io/docs/category/getting-started)나 제가 작성한 [튜토리얼](https://wannysim.me/docs/docusaurus-tutorial/intro/)을 참고해주세요.
