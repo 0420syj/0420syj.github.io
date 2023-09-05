@@ -4,8 +4,8 @@
   <ShortName>Wanny&#39;s Blog</ShortName>
   <Description>Search Wanny&#39;s Blog</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://0420syj.github.io/en/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://0420syj.github.io/en/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://0420syj.github.io/en/opensearch.xml" />
-  <moz:SearchForm>https://0420syj.github.io/en/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://wannysim.me/en/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://wannysim.me/en/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://wannysim.me/en/opensearch.xml" />
+  <moz:SearchForm>https://wannysim.me/en/</moz:SearchForm>
 </OpenSearchDescription>
