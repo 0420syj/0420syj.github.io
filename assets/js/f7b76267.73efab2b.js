@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_0420_syj_github_io=self.webpackChunk_0420_syj_github_io||[]).push([[8065],{6834:l=>{l.exports=JSON.parse('{"label":"IntelliJ","permalink":"/blog/tags/intelli-j","allTagsPath":"/blog/tags","count":1}')}}]);
