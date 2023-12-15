@@ -37,6 +37,16 @@ const sidebars = {
         }
       ],
     },
+    {
+      type: 'category',
+      label: 'JavaScript 🌐',
+      items: [
+        {
+          type: 'doc',
+          id: 'javascript/javascript-essentials',
+        }
+      ]
+    }
   ],
 
 };
