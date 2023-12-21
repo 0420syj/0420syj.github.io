@@ -44,6 +44,10 @@ const sidebars = {
         {
           type: 'doc',
           id: 'javascript/javascript-essentials',
+        },
+        {
+          type: 'doc',
+          id: 'javascript/execution-context',
         }
       ]
     }
