@@ -37,6 +37,20 @@ const sidebars = {
         }
       ],
     },
+    {
+      type: 'category',
+      label: 'JavaScript 🌐',
+      items: [
+        {
+          type: 'doc',
+          id: 'javascript/javascript-essentials',
+        },
+        {
+          type: 'doc',
+          id: 'javascript/execution-context-and-closure',
+        }
+      ]
+    }
   ],
 
 };
