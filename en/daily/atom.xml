@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wannysim.me/en/daily</id>
     <title>Wanny's Blog Blog</title>
-    <updated>2023-07-07T00:00:00.000Z</updated>
+    <updated>2023-09-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wannysim.me/en/daily"/>
     <subtitle>Wanny's Blog Blog</subtitle>
     <icon>https://wannysim.me/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[요즘 생각 기록 📝]]></title>
+        <id>https://wannysim.me/en/daily/2023-09-20-daily</id>
+        <link href="https://wannysim.me/en/daily/2023-09-20-daily"/>
+        <updated>2023-09-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[생각들을 기록해본다]]></summary>
+        <content type="html"><![CDATA[<p>떠다니는 생각을 기록해본다.</p><h2 class="anchor anchorWithStickyNavbar_F8Dq" id="썸네일을-만들어봤다">썸네일을 만들어봤다<a href="#썸네일을-만들어봤다" class="hash-link" aria-label="Direct link to 썸네일을 만들어봤다" title="Direct link to 썸네일을 만들어봤다">​</a></h2><p><img loading="lazy" alt="썸네일" src="/en/assets/images/preview-90f6b512bccc4498247a4b33672e2513.png" width="1024" height="1024" class="img_sarb"></p><blockquote><p>링크 : <a href="https://labs.openai.com/s/PceeoHDZycVmxFaq5G3f3N4R" target="_blank" rel="noopener noreferrer">https://labs.openai.com/s/PceeoHDZycVmxFaq5G3f3N4R</a></p></blockquote><p>DALL-E이라는 AI가 만들어낸 이미지다.
+프롬프트는 <code>A grove of sequoia trees that stretches for miles. Claude Monet-style painting</code> 였다.</p><p>모네가 수련 연작을 그리던 정원 뒷편 어딘가일 것 같다. AI 대단하다.</p><h2 class="anchor anchorWithStickyNavbar_F8Dq" id="요즘-생각들-정리">요즘 생각들 정리<a href="#요즘-생각들-정리" class="hash-link" aria-label="Direct link to 요즘 생각들 정리" title="Direct link to 요즘 생각들 정리">​</a></h2><h3 class="anchor anchorWithStickyNavbar_F8Dq" id="앞으로-공부할-것들">앞으로 공부할 것들<a href="#앞으로-공부할-것들" class="hash-link" aria-label="Direct link to 앞으로 공부할 것들" title="Direct link to 앞으로 공부할 것들">​</a></h3><ul><li>JavaScript Fundemental<ul><li>scope</li><li>event loop</li><li>기타 등등</li></ul></li><li>Svelte 맛보기</li><li>Deno 맛보기</li><li>BFF (Backend For Frontend)의 개념 이해하기</li></ul>]]></content>
+        <author>
+            <name>심완</name>
+            <uri>https://github.com/0420syj</uri>
+        </author>
+        <category label="life" term="life"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[요즘 일상 기록 📝]]></title>
         <id>https://wannysim.me/en/daily/2023-07-07-daily</id>
