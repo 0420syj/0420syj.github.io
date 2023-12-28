@@ -47,7 +47,7 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'javascript/execution-context',
+          id: 'javascript/execution-context-and-closure',
         }
       ]
     }
